@@ -1,0 +1,27 @@
+Week,Date,Session,Title,Topics,Recommended Resources,Due Dates
+1,Sept 13,Lecture 1,Probability I,"Course Introduction; Probability Measures;  Random Variables (RVs); PDFs, PMFs, and CDFs; Expectation",Knight Chp 1,
+,,Lab 1,No Lab ,,,
+2,Sept 20,Lecture 2,Probabilty II,MGFs; Joint and conditional distributions; Simulating random variables,Knight Chp 2,Perusall 1
+,,Lab 2,Probability I,,,
+3,Sept 27,Lecture 3,Inequalities,Concentration inequalities; Expectation Inequalities ,Course Notes,Assignment 1
+,,Lab 3,Probability II,,,
+4,Oct 4,Lecture 4,Convergence I,Convergence in probability; Convergence in distribution; Lp convergence; Convergence relationships,Lehmann Chp 2; Knight Chp 3,
+,,Lab 4,Inequalities,,,
+5,Oct 11,Lecture 5,Convergence II,Convergence of functions of RVs; Taylor's theorem; Delta method,Lehmann Chp 2; Knight Chp 3,Assignment 2
+,,Lab 5,Convergence I,,,
+6,Oct 18,Lecture 6,Limit Theorems ,CLTs; LLNs; GC Theorem; Simulation,Lehmann Chp; Knight Chp 3,Perusall 2
+,,Lab 6,Convergence II,,,
+7,Oct 25,Lecture 7,Statistical Models and Inference,Parametric and nonparmetric models; Goals of inference; Inferential frameworks,Knight Chp 4; Davison Chps 1 and 2; Lehmann Chp 4,Assignment 3
+,,Lab 7,Midterm Review,,,
+8,Nov1,Lecture 8,Midterm Exam,,,
+,,Lab 8,No Lab ,,,
+9,Nov 8,Lecture 9,READING WEEK,,,
+,,Lab 9,READING WEEK,,,
+10,Nov 15,Lecture 10,Nonparametric Estimation,Statistical functionals; Substitution Principle + Method of Moments;  Bootstrap,Knight Chp 4; Davison Chps 1 and 2; Lehmann Chps 4 and 6,Perusall 3
+,,Lab 10,Statistical Models and Inference,,,
+11,Nov 22,Lecture 11,Likelihoood I,Likelihood function; Likelihood principle; Asymptotic theory,Knight Chp 5; Davison Chp 4,Assignment 4
+,,Lab 11,Nonparametric Estimation,,,
+12,Nov 29,Lecture 12,Likelihood II,Misspecified Models; Numerical computation of MLEs,Knight Chp 5; Davison Chp 4,
+,,Lab 12,Likelihood II,,,
+13,Dec 6,Lecture 13,Review,Review for Final,,Assignment 5
+,,Lab 13,Final Review,,,

@@ -1,0 +1,27 @@
+---
+title: "Lab Documents"
+output: 
+  html_document:
+   toc: true
+   toc_depth: 3
+   toc_float: true
+   theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+library(tidyverse)
+```
+
+******
+
+Documents from tutorials will be posted on this page.
+
+<br>
+
+# Lab 1: No lab - Sept 13
+
+<br>
+
+# Lab 2: Probability I - Sept 20
+

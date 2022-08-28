@@ -1,0 +1,50 @@
+---
+title: "STA2112: Mathematical Statisics I"
+subtitle: "Fall 2022, Course Website"
+
+output: 
+  html_document:
+   theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br>
+
+  Welcome to the Fall 2022 course website for __STA2112__ (Mathematical Statisics I). This course is offered by the department of [Statistical Sciences](http://utstat.toronto.edu), and is the first of two canonical mathematical statistics courses designed for students in the MSc program in Statisical Sciences.
+
+__Prerequisites__
+Undergraduate-level understanding of 
+
+- Advanced calculus (eg. MAT237)
+- Linear algebra (eg. MAT223, MAT224).
+
+A previous course in probability and/or statistics is highly recommended.  Prerequisites will not be waived.
+
+__Overview__
+
+This course is designed for graduate students in Statistics, Biostatistics, and Computer Science
+
+Review of probability theory, convergence of random variables, statistical models, statistical functionals, maximum likelihood estimation, and computational methods.
+
+
+Important information related to STA2112 will be posted on this website including:
+
+ - [Course syllabus](syllabus.html)
+ 
+ - [Class Documents](class_docs.html) 
+ 
+ - [Tutorial Documents](tut_docs.html)
+ 
+ ******
+<br>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+<br>
+
+<a href="https://github.com/JSC270/JSC270.github.io">R Markdown source for this website</a>
+
+

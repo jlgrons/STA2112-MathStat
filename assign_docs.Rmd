@@ -1,0 +1,28 @@
+---
+title: "Assignment Documents"
+output: 
+  html_document:
+   toc: true
+   toc_float: true
+   theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
+```
+******
+
+All assignments will be posted to this section approximately 1 week before the due date listed on the course schedule.  Assignments are to be submitted through Quercus and are graded based on completion.  
+
+Perusall assignments are to be submitted on the Perusall website.  To receive full credit, you are to:
+
+* Read the whole paper.
+* Add at least 3 comments.
+* Add an upvote to a comment/question from someone else.
+
+Note: Even though some assignments may appear short, they take longer than expected to complete. Please do not leave things until the last minute. 
+
+<br>
+
+## Assignment 1 (Probability)
+
