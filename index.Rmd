@@ -1,5 +1,5 @@
 ---
-title: "STA2112: Mathematical Statisics I"
+title: "STA2112: Mathematical Statistics I"
 subtitle: "Fall 2022, Course Website"
 
 output: 
@@ -13,19 +13,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br>
 
-  Welcome to the Fall 2022 course website for __STA2112__ (Mathematical Statisics I). This course is offered by the department of [Statistical Sciences](http://utstat.toronto.edu), and is the first of two canonical mathematical statistics courses designed for students in the MSc program in Statisical Sciences.
+Welcome to the Fall 2022 course website for __STA2112__ (Mathematical Statistics I). This course is offered by the department of [Statistical Sciences](http://utstat.toronto.edu), and is the first of two canonical mathematical statistics courses designed for students in the MSc program in Statistical Sciences.
 
 __Prerequisites__
+
 Undergraduate-level understanding of 
 
 - Advanced calculus (eg. MAT237)
 - Linear algebra (eg. MAT223, MAT224).
 
-A previous course in probability and/or statistics is highly recommended.  Prerequisites will not be waived.
+A previous course in probability and/or statistics is highly recommended.  Prerequisites will not be waived.  Enrollment is restricted to graduate students in Statistics, Biostatistics, and Computer Science.
 
 __Overview__
-
-This course is designed for graduate students in Statistics, Biostatistics, and Computer Science
 
 Review of probability theory, convergence of random variables, statistical models, statistical functionals, maximum likelihood estimation, and computational methods.
 

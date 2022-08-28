@@ -13,7 +13,7 @@
 
 <title>STA2112: Mathematical Statistics I</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -146,11 +146,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -464,8 +468,9 @@ Learning objectives</h2>
 <ul>
 <li><p>Understand basic probability theory.</p></li>
 <li><p>Identify and answer questions that involve applying statistical
-models to complex data.</p></li>
-<li><p>Work in a team to solve statistical problems.</p></li>
+models to data.</p></li>
+<li><p>Work individually and in a team to solve statistical
+problems.</p></li>
 <li><p>Present the results and limitations of a statistical analysis at
 appropriate technical levels for the intended audience.</p></li>
 </ul>
@@ -577,7 +582,7 @@ link:</p>
 class="uri">https://app.perusall.com/home</a></p>
 <p>You will need to sign up for a free account. Once your account is
 confirmed, you can enroll in this class using the course code:
-<code>GRONSBELL-EYZ9A</code>.</p>
+<code>GRONSBELL-JAU6J</code>.</p>
 <p>Throughout the semester several papers will be posted for students to
 read and analyze.</p>
 <p><br></p>

@@ -11,9 +11,9 @@
 
 
 
-<title>STA2112: Mathematical Statisics I</title>
+<title>STA2112: Mathematical Statistics I</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -141,11 +141,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -290,7 +294,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">STA2112: Mathematical Statisics I</h1>
+<h1 class="title toc-ignore">STA2112: Mathematical Statistics I</h1>
 <h3 class="subtitle">Fall 2022, Course Website</h3>
 
 </div>
@@ -298,21 +302,21 @@ $(document).ready(function () {
 
 <p><br></p>
 <p>Welcome to the Fall 2022 course website for <strong>STA2112</strong>
-(Mathematical Statisics I). This course is offered by the department of
+(Mathematical Statistics I). This course is offered by the department of
 <a href="http://utstat.toronto.edu">Statistical Sciences</a>, and is the
 first of two canonical mathematical statistics courses designed for
-students in the MSc program in Statisical Sciences.</p>
-<p><strong>Prerequisites</strong> Undergraduate-level understanding
-of</p>
+students in the MSc program in Statistical Sciences.</p>
+<p><strong>Prerequisites</strong></p>
+<p>Undergraduate-level understanding of</p>
 <ul>
 <li>Advanced calculus (eg. MAT237)</li>
 <li>Linear algebra (eg. MAT223, MAT224).</li>
 </ul>
 <p>A previous course in probability and/or statistics is highly
-recommended. Prerequisites will not be waived.</p>
+recommended. Prerequisites will not be waived. Enrollment is restricted
+to graduate students in Statistics, Biostatistics, and Computer
+Science.</p>
 <p><strong>Overview</strong></p>
-<p>This course is designed for graduate students in Statistics,
-Biostatistics, and Computer Science</p>
 <p>Review of probability theory, convergence of random variables,
 statistical models, statistical functionals, maximum likelihood
 estimation, and computational methods.</p>
