@@ -45,6 +45,6 @@ Important information related to STA2112 will be posted on this website includin
 
 <br>
 
-<a href="https://github.com/JSC270/JSC270.github.io">R Markdown source for this website</a>
+<a href="https://github.com/jlgrons/STA2112-MathStat">R Markdown source for this website</a>
 
 
