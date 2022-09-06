@@ -15,12 +15,12 @@ navbar:
           href: tut_docs.html
         - text: Assignments
           href: assign_docs.html
-    - text: Resources
-      href: resources.html
-    - text: R Resources
-      href: R_resources.html
+    #- text: R Resources
+    #  href: R_resources.html
     - text: Announcements
       href: announcements.html
+    - text: Resources
+      href: resources.html
 output:
   html_document:
     lib_dir: site_libs

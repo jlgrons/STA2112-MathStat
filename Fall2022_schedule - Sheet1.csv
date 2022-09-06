@@ -1,9 +1,9 @@
 Week,Date,Session,Title,Topics,Recommended Resources,Due Dates
-1,Sept 13,Lecture 1,Probability I,"Course Introduction; Probability Measures;  Random Variables (RVs); PDFs, PMFs, and CDFs; Expectation",Knight Chp 1,
+1,Sept 13,Lecture 1,Probability I,"Course Introduction; Probability Measures;  Random Variables (RVs); PDFs, PMFs, and CDFs",Knight Chp 1,
 ,,Lab 1,No Lab ,,,
-2,Sept 20,Lecture 2,Probabilty II,MGFs; Joint and conditional distributions; Simulating random variables,Knight Chp 2,Perusall 1
+2,Sept 20,Lecture 2,Probabilty II,Expectation; MGFs; Joint and conditional distributions,Knight Chp 1, 2,Perusall 1
 ,,Lab 2,Probability I,,,
-3,Sept 27,Lecture 3,Inequalities,Concentration inequalities; Expectation Inequalities ,Course Notes,Assignment 1
+3,Sept 27,Lecture 3, Simulating random variables, Inequalities,Concentration inequalities; Expectation Inequalities ,Course Notes,Assignment 1
 ,,Lab 3,Probability II,,,
 4,Oct 4,Lecture 4,Convergence I,Convergence in probability; Convergence in distribution; Lp convergence; Convergence relationships,Lehmann Chp 2; Knight Chp 3,
 ,,Lab 4,Inequalities,,,
