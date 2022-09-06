@@ -39,7 +39,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 
-- Professor: Virtual from 1:30-2:30pm on Mondays. Zoom link TBD.
+- Professor: Virtual from 2:00-3:00pm on Tuesdays. Zoom link TBD.
 
 - Teaching Assistants: Time TBD.  Zoom link TBD.
 
@@ -57,7 +57,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 <br>
 
-### _Laboratory Sessions_
+### _Tutorials_
 - Tuesday, 12-1pm EST 
 - All content will be posted to the course website once the lab is finished.
 
@@ -81,11 +81,11 @@ By the end of this course, you should be able to:
 
 - Understand basic probability theory.
 
-- Identify and answer questions that involve applying statistical models to complex data.
+- Evaluate convergence of sequences of random variables
 
-- Work in a team to solve statistical problems.
+- Assess properties of estimators, primarily when $n$ is large (ie.\ asymptotics).
 
-- Present the results and limitations of a statistical analysis at appropriate technical levels for the intended audience.
+- Use fundamental estimation and inference procedures (eg.\ MLE, bootstrap).
 
 
 <br>
@@ -103,7 +103,7 @@ jsc270coursegrading <- read_csv("Fall2022_Grading.csv")
 knitr::kable(jsc270coursegrading[1:8,])
 ```
 
-
+You are allowed one late day to use on a homework assignment (not a Perusall paper) at any time throughout the course.  You must write "I am using the late day" at the top of page 1.
 <br>
 
 ******
@@ -119,21 +119,29 @@ knitr::kable(jsc270coursegrading[1:8,])
 
 ******
 
+## <i class="fas fa-book" aria-hidden="true"></i> Textbooks
 
-## <i class="fas fa-code" aria-hidden="true"></i> Computing
+Required texts:
 
-The course will use [R](https://www.r-project.org) for computing.  I highly recommend the [RStudio](https://www.rstudio.com) environment. You will need to install both of these on your computer. 
+- *Mathematical Statistics* by K. Knight [[hard copy]](https://www.routledge.com/Mathematical-Statistics/Knight/p/book/9781584881780)
 
-You can download R from [CRAN](https://cran.r-project.org/) and the free Desktop Version of Rstudio [here](https://rstudio.com/products/rstudio/\#rstudio-desktop).  
+- *Elements of Large Sample Theory* by E.L. Lehmann  [[ecopy]](https://onesearch.library.utoronto.ca)
 
-I also strongly recommend using [R Markdown](https://rmarkdown.rstudio.com) to produce documents for your analyses.  
+- *Statistical Models * by A.C. Davison [[ecopy]](https://onesearch.library.utoronto.ca)
 
-There are many online resources for R and Rstudio, including the R those on the R resources section of this website and some recommended resources listed below.
+- *Computer Age Statistical Inference* by  B. Efron & T. Hastie [[ecopy]](https://onesearch.library.utoronto.ca)
 
-* If you are new to R, you could look at [Quick-R](https://www.statmethods.net). 
-* For more experienced users, the [Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) are invaluable.  
-* You can also check out our [computing materials](https://jlgrons.github.io/UofT-DoSS-SPB/methods_computing.html) from the summer bootcamp offered by the department. 
+
+Optional textbooks: 
+
+- *Statistical Inference* by  G. Casella & R.L. Berger [[hard cover]](https://blackwells.co.uk/bookshop/product/9780534243128?gC=4cfad707612)
+
+- *All of Statistics* by  L. Wasserman [[ecopy]](https://link.springer.com/book/10.1007/978-0-387-21736-9)
+
+
+
 <br>
+
 
 
 ******
@@ -150,6 +158,23 @@ Throughout the semester several papers will be posted for students to read and a
  
 <br>
 
+
+******
+
+## <i class="fas fa-code" aria-hidden="true"></i> Computing
+
+The course will use [R](https://www.r-project.org) for computing.  I highly recommend the [RStudio](https://www.rstudio.com) environment. You will need to install both of these on your computer. 
+
+You can download R from [CRAN](https://cran.r-project.org/) and the free Desktop Version of Rstudio [here](https://rstudio.com/products/rstudio/\#rstudio-desktop).  
+
+I also strongly recommend using [R Markdown](https://rmarkdown.rstudio.com) to produce documents for your analyses.  
+
+There are many online resources for R and Rstudio, including the R those on the R resources section of this website and some recommended resources listed below.
+
+* If you are new to R, you could look at [Quick-R](https://www.statmethods.net). 
+* For more experienced users, the [Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) are invaluable.  
+* You can also check out our [computing materials](https://jlgrons.github.io/UofT-DoSS-SPB/methods_computing.html) from the summer bootcamp offered by the department. 
+<br>
 
 *******
 ## <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Course Policies
