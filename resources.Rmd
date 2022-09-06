@@ -1,5 +1,5 @@
 ---
-title: "Mathematical Statisics and More"
+title: "Mathematical Statistics and More"
 output: 
   html_document:
    toc: true
