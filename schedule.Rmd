@@ -34,7 +34,7 @@ knitr::kable(jsc270courseschedule[1:26,]) %>%
 
 # <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Evaluation Details
 
-Assignments and reflection quizzes are to be submitted via Quercus.  Perusall papers are completed within the Perusall application.
+Assignmentsare to be submitted via Quercus.  Perusall papers are completed within the Perusall application.
 
 The deadline for submission for assignments, Perusall papers, and reflection quizzes is always 9:00am EST on the due date (1 hour before class starts).
 

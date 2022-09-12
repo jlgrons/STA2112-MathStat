@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 ```
 ******
 
-All assignments will be posted to this section approximately 1 week before the due date listed on the course schedule.  Assignments are to be submitted through Quercus and are graded based on completion.  
+All assignments will be posted to this section approximately 1-2 weeks before the due date listed on the course schedule.  Assignments are to be submitted through Quercus and are graded based on completion.  
 
 Perusall assignments are to be submitted on the Perusall website.  To receive full credit, you are to:
 
