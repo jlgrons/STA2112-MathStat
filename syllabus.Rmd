@@ -125,20 +125,18 @@ Required texts:
 
 - *Mathematical Statistics* by K. Knight [[hard copy]](https://www.routledge.com/Mathematical-Statistics/Knight/p/book/9781584881780)
 
-- *Elements of Large Sample Theory* by E.L. Lehmann  [[ecopy]](https://onesearch.library.utoronto.ca)
+- *All of Statistics* by  L. Wasserman [[ecopy]](https://link.springer.com/book/10.1007/978-0-387-21736-9)
 
 - *Statistical Models * by A.C. Davison [[ecopy]](https://onesearch.library.utoronto.ca)
 
-- *Computer Age Statistical Inference* by  B. Efron & T. Hastie [[ecopy]](https://onesearch.library.utoronto.ca)
 
-
-Optional textbooks: 
+Additional textbooks: 
 
 - *Statistical Inference* by  G. Casella & R.L. Berger [[hard cover]](https://blackwells.co.uk/bookshop/product/9780534243128?gC=4cfad707612)
 
-- *All of Statistics* by  L. Wasserman [[ecopy]](https://link.springer.com/book/10.1007/978-0-387-21736-9)
+- *Elements of Large Sample Theory* by E.L. Lehmann  [[ecopy]](https://onesearch.library.utoronto.ca)
 
-
+- *Computer Age Statistical Inference* by  B. Efron & T. Hastie [[ecopy]](https://onesearch.library.utoronto.ca)
 
 <br>
 
@@ -171,8 +169,8 @@ I also strongly recommend using [R Markdown](https://rmarkdown.rstudio.com) to p
 
 There are many online resources for R and Rstudio, including the R those on the R resources section of this website and some recommended resources listed below.
 
-* If you are new to R, you could look at [Quick-R](https://www.statmethods.net). 
-* For more experienced users, the [Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) are invaluable.  
+* If you are new to R, you can take a look at [Quick-R](https://www.statmethods.net). 
+* If you are experienced with R, the [Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) are invaluable.  
 * You can also check out our [computing materials](https://jlgrons.github.io/UofT-DoSS-SPB/methods_computing.html) from the summer bootcamp offered by the department. 
 <br>
 
