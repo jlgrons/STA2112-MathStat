@@ -13,7 +13,7 @@
 
 <title>schedule.knit</title>
 
-<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -148,15 +148,11 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -418,7 +414,7 @@ Probability I
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 Course Introduction; Probability Measures; Random Variables (RVs); PDFs,
-PMFs, and CDFs
+PMFs, &amp; CDFs
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 Knight Chp 1
@@ -458,8 +454,8 @@ Lecture 2
 Probabilty II
 </td>
 <td style="text-align:left;">
-Expectation; Random Vectors; Joint and conditional distributions;
-Conditional expectation
+Expectation &amp; Transformation; Random Vectors; Joint and conditional
+distributions; Independence; Covariance &amp; Correlation
 </td>
 <td style="text-align:left;">
 Knight Chp 1 + 2
@@ -497,10 +493,11 @@ Sept 27
 Lecture 3
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Inequalities
+Conditional Expectation &amp; Inequalities
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Concentration inequalities; Expectation Inequalities
+Conditional expectation; Concentration inequalities; Expectation
+Inequalities
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 Wasserman Chp 4
@@ -559,7 +556,7 @@ Knight Chp 3; Wasserman Chp 5
 Lab 4
 </td>
 <td style="text-align:left;">
-Inequalities
+Conditional Expectation &amp; Inequalities
 </td>
 <td style="text-align:left;">
 </td>
