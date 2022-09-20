@@ -43,7 +43,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 Zoom link:  https://utoronto.zoom.us/j/88068311938.
 
-- Teaching Assistants: Virtual from 10:00-11:00 am on Wednesdays. 
+- Teaching Assistants: Virtual from 3:00-4:00pm on Wednesdays. 
 
 Zoom link: https://utoronto.zoom.us/j/4709510697
 
