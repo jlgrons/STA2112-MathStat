@@ -21,7 +21,12 @@ Documents from class will be posted on this page.
 
 <br>
 
-## Lecture 1: Probability 1 - Sept 13
+## Lecture 1: Probability I - Sept 13
 
 * [Slides](https://drive.google.com/drive/folders/1EXH7iZxBAoVQnpVqGBOuGq4p8KofktHw?usp=sharing)
+
+## Lecture 2: Probability II - Sept 20
+
+* [Slides](https://drive.google.com/file/d/1dmiKqummqNJKTiBNJ0GhVDFANFeV4KW_/view?usp=sharing)
+
 
