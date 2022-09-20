@@ -41,7 +41,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 - Professor: Virtual from 2:00-3:00pm on Tuesdays. Zoom link TBD.
 
-- Teaching Assistants: Time TBD.  Zoom link TBD.
+- Teaching Assistants: Virtual from 10:00-11:00 am on Wednesdays. Zoom link: https://utoronto.zoom.us/j/4709510697
 
 <br>
 
