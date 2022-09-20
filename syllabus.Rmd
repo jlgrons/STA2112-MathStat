@@ -39,9 +39,13 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 
-- Professor: Virtual from 2:00-3:00pm on Tuesdays. Zoom link TBD.
+- Professor: Virtual from 2:00-3:00pm on Tuesdays. 
 
-- Teaching Assistants: Virtual from 10:00-11:00 am on Wednesdays. Zoom link: https://utoronto.zoom.us/j/4709510697
+Zoom link:  https://utoronto.zoom.us/j/88068311938.
+
+- Teaching Assistants: Virtual from 10:00-11:00 am on Wednesdays. 
+
+Zoom link: https://utoronto.zoom.us/j/4709510697
 
 <br>
 
