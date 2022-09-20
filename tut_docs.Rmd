@@ -25,3 +25,4 @@ Documents from tutorials will be posted on this page.
 
 # Lab 2: Probability I - Sept 20
 
+* [Material](https://drive.google.com/file/d/1bBMDI3ujtFrzIBEU1lQkhPe4ds2L3rRQ/view?usp=sharing)
