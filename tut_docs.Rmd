@@ -29,4 +29,4 @@ Documents from tutorials will be posted on this page.
 
 # Lab 3: Probability II - Sept 27
 
-* [Material](https://drive.google.com/file/d/1Q82VVZF5AoMRrzts2YOIXIe6X5RahBjY/view?usp=sharing)
+* [Solutions](https://drive.google.com/file/d/1Q82VVZF5AoMRrzts2YOIXIe6X5RahBjY/view?usp=sharing)
