@@ -26,3 +26,7 @@ Documents from tutorials will be posted on this page.
 # Lab 2: Probability I - Sept 20
 
 * [Solutions](https://drive.google.com/file/d/1bBMDI3ujtFrzIBEU1lQkhPe4ds2L3rRQ/view?usp=sharing)
+
+# Lab 3: Probability II - Sept 27
+
+* [Material](https://drive.google.com/file/d/1Q82VVZF5AoMRrzts2YOIXIe6X5RahBjY/view?usp=sharing)
