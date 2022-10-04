@@ -19,14 +19,17 @@ Documents from tutorials will be posted on this page.
 
 <br>
 
-# Lab 1: No lab - Sept 13
+# Lab 0: No lab - Sept 13
 
 <br>
 
-# Lab 2: Probability I - Sept 20
+# Lab 1: Probability I - Sept 20
 
 * [Solutions](https://drive.google.com/file/d/1bBMDI3ujtFrzIBEU1lQkhPe4ds2L3rRQ/view?usp=sharing)
 
-# Lab 3: Probability II - Sept 27
+# Lab 2: Probability II - Sept 27
 
 * [Solutions](https://drive.google.com/file/d/1Q82VVZF5AoMRrzts2YOIXIe6X5RahBjY/view?usp=sharing)
+
+# Lab 3: Expectations and Inequalities - Oct 4
+* [lab material](https://drive.google.com/file/d/1UHyhqWIGdUjssP15RB0He8x7yK285qmZ/view?usp=sharing)
