@@ -40,3 +40,5 @@ Note: Even though some assignments may appear short, they take longer than expec
 ## Assignment 3 (Convergence) - Due Oct 25, 2022 at 9am
 
 [Assignment Document](https://drive.google.com/file/d/1ScLoIVTKGqGElteXGfjic4e268kV1fVT/view?usp=sharing)
+
+*Note*: Questions 4bc, 5, and 7 will be easier to answer after lecture on Oct 18.
