@@ -11,17 +11,17 @@ Week,Date,Session,Title,Topics,Recommended Resources,Due Dates
 ,,Lab 5,Convergence I,,,
 6,Oct 18,Lecture 6,Limit Theorems, Statistical Models and Inference; Parametric and nonparmetric models; Goals of inference; Inferential frameworks,Knight Chp 4; Davison Chp 1, Perusall 2
 ,,Lab 6,Convergence II,,,
-7,Oct 25,Lecture 7,Nonparametric Estimation,Statistical functionals; Substitution Principle + Method of Moments,Knight Chp 5; Davison Chp 4,Assignment 3
+7,Oct 25,Lecture 7,Midterm Review, , ,Assignment 3
 ,,Lab 7,Midterm Review,,,
 8,Nov1,Lecture 8,Midterm Exam,,,
 ,,Lab 8,No Lab ,,,
 9,Nov 8,Lecture 9,READING WEEK,,,
 ,,Lab 9,READING WEEK,,,
-10,Nov 15,Lecture 10, Resampling, Jackknife; Bootstrap,Knight Chp 4; Davison Chps 1 and 2,Perusall 3
+10,Nov 15,Lecture 10,Nonparametric Estimation,Statistical functionals; Substitution Principle + Method of Moments; Bootstrap,Knight Chp 4; Davison Chps 1 and 2,
 ,,Lab 10,Statistical Models and Inference,,,
 11,Nov 22,Lecture 11,Likelihoood I,Likelihood function; Likelihood principle; Asymptotic theory,Knight Chp 5; Davison Chp 4,Assignment 4
 ,,Lab 11,Nonparametric Estimation,,,
-12,Nov 29,Lecture 12,Likelihood II,Misspecified Models; Numerical computation of MLEs,Knight Chp 5; Davison Chp 4,
-,,Lab 12,Likelihood II,,,
+12,Nov 29,Lecture 12,Likelihood II,Misspecified Models; Numerical computation of MLEs,Knight Chp 5; Davison Chp 4, Perusall 3
+,,Lab 12,Likelihood I,,,
 13,Dec 6,Lecture 13,Presentations, Final Project Presentations,,Assignment 5
 ,,Lab 13, No Lab,,,
