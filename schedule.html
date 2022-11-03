@@ -13,7 +13,7 @@
 
 <title>schedule.knit</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -67,6 +67,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -87,6 +88,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -144,11 +148,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -312,7 +320,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -328,7 +336,7 @@ div.tocify {
   <a href="schedule.html">Schedule</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Course Documents
      
     <span class="caret"></span>
@@ -363,8 +371,11 @@ div.tocify {
 
 <p><br></p>
 <div id="course-schedule" class="section level1">
-<h1><span class="glyphicon glyphicon-calendar" aria-hidden="false"></span> Course Schedule</h1>
-<p>Below is our course schedule, which will almost certainly change as the course progresses. Details regarding evaluation due dates can be found below the table.</p>
+<h1><span class="glyphicon glyphicon-calendar"
+aria-hidden="false"></span> Course Schedule</h1>
+<p>Below is our course schedule, which will almost certainly change as
+the course progresses. Details regarding evaluation due dates can be
+found below the table.</p>
 <table class="table" style="float: left; margin-right: 10px;">
 <thead>
 <tr>
@@ -406,7 +417,8 @@ Lecture 1
 Probability I
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Course Introduction; Probability Measures; Random Variables (RVs); PDFs, PMFs, &amp; CDFs
+Course Introduction; Probability Measures; Random Variables (RVs); PDFs,
+PMFs, &amp; CDFs
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 Knight Chp 1
@@ -446,7 +458,8 @@ Lecture 2
 Probabilty II
 </td>
 <td style="text-align:left;">
-Expectation &amp; Transformation; Random Vectors; Joint and conditional distributions; Independence
+Expectation &amp; Transformation; Random Vectors; Joint and conditional
+distributions; Independence
 </td>
 <td style="text-align:left;">
 Knight Chp 1 + 2
@@ -487,7 +500,8 @@ Lecture 3
 Conditional Expectation &amp; Inequalities
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Covariance &amp; Correlation; Conditional expectation; Concentration inequalities; Expectation Inequalities
+Covariance &amp; Correlation; Conditional expectation; Concentration
+inequalities; Expectation Inequalities
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 Wasserman Chp 4
@@ -609,7 +623,8 @@ Lecture 6
 Limit Theorems
 </td>
 <td style="text-align:left;">
-Statistical Models and Inference; Parametric and nonparmetric models; Goals of inference; Inferential frameworks
+Statistical Models and Inference; Parametric and nonparmetric models;
+Goals of inference; Inferential frameworks
 </td>
 <td style="text-align:left;">
 Knight Chp 4; Davison Chp 1
@@ -765,7 +780,7 @@ Lecture 10
 Nonparametric Estimation
 </td>
 <td style="text-align:left;">
-Statistical functionals; Substitution Principle + Method of Moments; Bootstrap
+Statistical functionals; Substitution Principle; Bootstrap
 </td>
 <td style="text-align:left;">
 Knight Chp 4; Davison Chps 1 and 2
@@ -823,7 +838,7 @@ Assignment 4
 Lab 11
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Nonparametric Estimation
+Final Project Working Session
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 </td>
@@ -918,9 +933,13 @@ No Lab
 <p><br></p>
 </div>
 <div id="evaluation-details" class="section level1">
-<h1><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Evaluation Details</h1>
-<p>Assignmentsare to be submitted via Quercus. Perusall papers are completed within the Perusall application.</p>
-<p>The deadline for submission for assignments, Perusall papers, and reflection quizzes is always 9:00am EST on the due date (1 hour before class starts).</p>
+<h1><span class="glyphicon glyphicon-calendar"
+aria-hidden="true"></span> Evaluation Details</h1>
+<p>Assignmentsare to be submitted via Quercus. Perusall papers are
+completed within the Perusall application.</p>
+<p>The deadline for submission for assignments, Perusall papers, and
+reflection quizzes is always 9:00am EST on the due date (1 hour before
+class starts).</p>
 <!-- # ```{r, echo=FALSE} -->
 <!-- # library(tidyverse) -->
 <!-- # library(kableExtra) -->
