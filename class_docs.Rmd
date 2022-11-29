@@ -78,6 +78,15 @@ Documents from class will be posted on this page.
 ## Lecture 9: Parametrics - Nov 22
 
 * [Slides](https://drive.google.com/file/d/163WNi6bf_6ri22ZY33AaetH6uDOLfkPz/view?usp=sharing)
+* [Slides with scribbles]()
+
+<br>
+
+## Lecture 10: More MLE - Nov 29
+* [Slides](https://drive.google.com/file/d/1PUhqKmBFUdBWMWxrhb9o75uMSrIIJmD4/view?usp=sharing)
+* [Slides with scribbles]()
+
+<br>
 
 
 
