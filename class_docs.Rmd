@@ -21,68 +21,89 @@ Documents from class will be posted on this page.
 
 <br>
 
-## Lecture 1: Probability I - Sept 13
+## Lecture 1: Probability I 
+
+Sept 13
 
 * [Slides](https://drive.google.com/drive/folders/1EXH7iZxBAoVQnpVqGBOuGq4p8KofktHw?usp=sharing)
 
 <br>
 
-## Lecture 2: Probability II - Sept 20
+## Lecture 2: Probability II 
+
+Sept 20
 
 * [Slides](https://drive.google.com/file/d/1dmiKqummqNJKTiBNJ0GhVDFANFeV4KW_/view?usp=sharing)
 
 <br>
 
-## Lecture 3: Inequalities - Sept 27
+## Lecture 3: Inequalities 
+
+Sept 27
 
 * [Slides](https://drive.google.com/file/d/1wXvpilkm2zRUCIINMrCaEgNoCPf40TSn/view?usp=sharing)
 * [Slides with scribbles](https://drive.google.com/file/d/1xXI421hTVcBkNcMWr4qpLH9QhfF1HKX8/view?usp=sharing)
 
 <br>
 
-## Lecture 4: Convergence I - Oct 4
+## Lecture 4: Convergence I 
+
+Oct 4
 
 * [Slides](https://drive.google.com/file/d/1VL-Yz4Z4PYoouulj4qTuVFujKjvUbckZ/view?usp=sharing)
 * [Slides with scribbles](https://drive.google.com/file/d/1mBQZ6wZk5khfRlnb3yZKViZzjODbGNqk/view?usp=sharing)
 
 <br>
 
-## Lecture 5: Convergence II - Oct 11
+## Lecture 5: Convergence II 
+
+Oct 11
 
 * [Slides](https://drive.google.com/file/d/1OPtj8IbV3ncHBicHKAjQf_w2fMK7bQSg/view?usp=sharing)
 * [Slides with scribbles](https://drive.google.com/file/d/14Sf8GYSIJ3gmua-qKu_pLrmwHpaAQNUo/view?usp=sharing)
 
 <br>
 
-## Lecture 6: Inference - Oct 18
+## Lecture 6: Inference 
+
+Oct 18
 
 * [Slides](https://drive.google.com/file/d/1fF3CCUc_vUSCzgZltRsVcjsXfiSNsTxk/view?usp=sharing)
 * [Slides with scribbles](https://drive.google.com/file/d/1PrIdNUaPlK062CxmB5Z8wmo4FEM1LkF-/view?usp=sharing)
 
 <br>
 
-## Lecture 7: Review - Oct 25
+## Lecture 7: Review 
+
+Oct 25
 
 * [Slides](https://drive.google.com/file/d/15rwV2XO3j6oNFN1HTr9fW8NVS-vObpAS/view?usp=sharing)
 * [Slides with scribbles](https://drive.google.com/file/d/1DadRX6EYO7pdt300_lD7XdMIJJbZUPsQ/view?usp=sharing)
 
 <br>
 
-## Lecture 8: Nonparametrics - Nov 15
+## Lecture 8: Nonparametrics 
+
+Nov 15
 
 * [Slides](https://drive.google.com/file/d/1q3hkMQ45JTs9QbD-GRs7vwMdCmot6kHq/view?usp=sharing)
 * [Slides with scribbles](https://drive.google.com/file/d/1DHieaD05UD1cveQe2m_LyPEZIsmYECQU/view?usp=sharing)
 
 <br>
 
-## Lecture 9: Parametrics - Nov 22
+## Lecture 9: Parametrics 
+
+Nov 22
 
 * [Slides](https://drive.google.com/file/d/163WNi6bf_6ri22ZY33AaetH6uDOLfkPz/view?usp=sharing)
 * [Slides with scribbles]()
 
 <br>
 
-## Lecture 10: More MLE - Nov 29
+## Lecture 10: More MLE 
+
+Nov 29
+
 * [Slides](https://drive.google.com/file/d/1PUhqKmBFUdBWMWxrhb9o75uMSrIIJmD4/view?usp=sharing)
 * [Slides with scribbles](https://drive.google.com/file/d/1Kvm_VuuHWiP96jt4rfrJMZ5BvqOfLBst/view?usp=sharing)
 
