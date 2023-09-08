@@ -1,0 +1,84 @@
+---
+title: "Lab Documents"
+output: 
+  html_document:
+   toc: true
+   toc_depth: 3
+   toc_float: true
+   theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+library(tidyverse)
+```
+
+******
+
+Documents from tutorials will be posted on this page.
+
+<br>
+
+# Lab 1: Probability I 
+
+Sept 20
+
+* [Solutions](https://drive.google.com/file/d/1bBMDI3ujtFrzIBEU1lQkhPe4ds2L3rRQ/view?usp=sharing)
+
+<br>
+
+# Lab 2: Probability II 
+
+Sept 27
+
+* [Solutions](https://drive.google.com/file/d/1Q82VVZF5AoMRrzts2YOIXIe6X5RahBjY/view?usp=sharing)
+
+<br>
+
+# Lab 3: Inequalities 
+
+Oct 4
+
+* [Solutions](https://drive.google.com/file/d/1UHyhqWIGdUjssP15RB0He8x7yK285qmZ/view?usp=sharing)
+
+<br>
+
+# Lab 4: Convergence I 
+
+Oct 11
+
+* [Solutions](https://drive.google.com/file/d/1vdrhOqoqeM80ZDFXwQc9dWizyRvZFUGU/view?usp=sharing)
+
+<br>
+
+# Lab 5: Convergence II 
+
+Oct 18
+
+* [Solutions](https://drive.google.com/file/d/1mxRlhqRtmVeYCFlesGfvEmVjJY2ZpzzK/view?usp=sharing)
+
+<br>
+
+# Lab 6: Review 
+
+Oct 25
+
+* [Solutions](https://drive.google.com/file/d/1vX8W4vLSLqA7Ijwf2BMYH1ICvPQBgpGl/view?usp=sharing)
+
+<br>
+
+# Lab 7: Inference 
+
+Nov 15
+
+* [Solutions](https://drive.google.com/file/d/1egFnGB21fP94CO_fu1LCK5THBzNFrqvm/view?usp=sharing)
+
+<br>
+
+# Lab 8: MLE
+
+Nov 29
+
+* [Solutions](https://drive.google.com/file/d/16yOtdxxTdLwUroDB7l1d2un8X8aXICNy/view?usp=share_link)
+
+
