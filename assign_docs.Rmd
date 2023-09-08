@@ -24,20 +24,26 @@ Note: Even though some assignments may appear short, they take longer than expec
 
 <br>
 
-## Assignment 1 (Probability) - Due Sept 27, 2022 at 9 am
+## Assignment 1 (Probability)
+
+Due Sept 27, 2022 at 9 am
 
 [Assignment Document](https://drive.google.com/file/d/1d-52W4AZN-YGdi6AV2OzxGWD5J886JcS/view?usp=sharing)
 
 [Assignment Solutions](https://q.utoronto.ca/courses/273117/files)
 
 
-## Assignment 2 (Random Variables) - Due Oct 11, 2022 at 9 am
+## Assignment 2 (Random Variables) 
+
+Due Oct 11, 2022 at 9 am
 
 [Assignment Document](https://drive.google.com/drive/folders/1O708lq2WE6e_w3F-LM6ePvCkoTlkXUPB?usp=sharing)
 
 [Assignment Solutions](https://q.utoronto.ca/courses/273117/files)
 
-## Assignment 3 (Convergence) - Due Oct 25, 2022 at 9am
+## Assignment 3 (Convergence) 
+
+Due Oct 25, 2022 at 9am
 
 [Assignment Document](https://drive.google.com/file/d/1ScLoIVTKGqGElteXGfjic4e268kV1fVT/view?usp=sharing)
 
@@ -45,7 +51,39 @@ Note: Even though some assignments may appear short, they take longer than expec
 
 [Assignment Solutions](https://q.utoronto.ca/courses/273117/files)
 
-## Final Project Sign-Up - Due Nov 5, 2022 at 9am
+## Final Project Sign-Up 
 
-Sign-up with one another person for the final project on this [sheet](https://docs.google.com/spreadsheets/d/1LQhUz7_ng45QicVoRSQStZ_LKLacc_KQTr9ZqvsatRk/edit?usp=sharing).  This is worth 3 points of the final project grade.
+Due Nov 5, 2022 at 9am
+
+Sign-up with one another person for the final project on this [sheet](https://docs.google.com/spreadsheets/d/1LQhUz7_ng45QicVoRSQStZ_LKLacc_KQTr9ZqvsatRk/edit?usp=sharing).  This is worth 3 points of the final project grade
+
+## Final Project Paper Sign-Up 
+
+Due Nov 18, 2022 at 9am
+
+Choose a paper for final project from the assignment document and write it on this [sheet](https://docs.google.com/spreadsheets/d/1LQhUz7_ng45QicVoRSQStZ_LKLacc_KQTr9ZqvsatRk/edit?usp=sharing).  This is worth 1 point of the final project grade
+
+
+## Final Project 
+
+Due Dec 6, 2022 at 9am
+
+[Assignment Document](https://drive.google.com/file/d/1KJxSB6QepEJvUEWGa26BeF-fQIQsHEbV/view?usp=sharing)
+
+[Example slides 1](https://drive.google.com/file/d/1ThiAcJv5YlPMYM45bwMSEouQpSwHA9J4/view?usp=sharing)
+
+[Example slides 2](https://drive.google.com/file/d/1uvNmNj6H8XDtB_qNTVXhO6By_pg7iyI0/view?usp=sharing)
+
+## Homework 4 (Inference I) 
+
+Due Nov 30, 2022 at 9am
+
+[Assignment Document](https://drive.google.com/file/d/12viByrhR55IRuWQhhWvEb9wAA-vTaywe/view?usp=sharing)
+
+
+## Homework 5 (Inference II) 
+
+Due Dec 14, 2022 at 9am
+
+[Assignment Document](https://drive.google.com/file/d/155WjMywiAXuIcuobkIQRIXgGM5da9VkY/view?usp=sharing)
 
