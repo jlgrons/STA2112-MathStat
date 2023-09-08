@@ -13,7 +13,7 @@
 
 <title>Class Documents</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -144,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -177,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -186,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -367,117 +364,11 @@ div.tocify {
 <p><br></p>
 <div id="lecture-1-probability-i" class="section level2">
 <h2>Lecture 1: Probability I</h2>
-<p>Sept 13</p>
+<p>Sept 12</p>
 <ul>
-<li><a
-href="https://drive.google.com/drive/folders/1EXH7iZxBAoVQnpVqGBOuGq4p8KofktHw?usp=sharing">Slides</a></li>
+<li><a href="">Slides</a></li>
+<li><a href="">Slides with scribbles</a></li>
 </ul>
-<p><br></p>
-</div>
-<div id="lecture-2-probability-ii" class="section level2">
-<h2>Lecture 2: Probability II</h2>
-<p>Sept 20</p>
-<ul>
-<li><a
-href="https://drive.google.com/file/d/1dmiKqummqNJKTiBNJ0GhVDFANFeV4KW_/view?usp=sharing">Slides</a></li>
-</ul>
-<p><br></p>
-</div>
-<div id="lecture-3-inequalities" class="section level2">
-<h2>Lecture 3: Inequalities</h2>
-<p>Sept 27</p>
-<ul>
-<li><a
-href="https://drive.google.com/file/d/1wXvpilkm2zRUCIINMrCaEgNoCPf40TSn/view?usp=sharing">Slides</a></li>
-<li><a
-href="https://drive.google.com/file/d/1xXI421hTVcBkNcMWr4qpLH9QhfF1HKX8/view?usp=sharing">Slides
-with scribbles</a></li>
-</ul>
-<p><br></p>
-</div>
-<div id="lecture-4-convergence-i" class="section level2">
-<h2>Lecture 4: Convergence I</h2>
-<p>Oct 4</p>
-<ul>
-<li><a
-href="https://drive.google.com/file/d/1VL-Yz4Z4PYoouulj4qTuVFujKjvUbckZ/view?usp=sharing">Slides</a></li>
-<li><a
-href="https://drive.google.com/file/d/1mBQZ6wZk5khfRlnb3yZKViZzjODbGNqk/view?usp=sharing">Slides
-with scribbles</a></li>
-</ul>
-<p><br></p>
-</div>
-<div id="lecture-5-convergence-ii" class="section level2">
-<h2>Lecture 5: Convergence II</h2>
-<p>Oct 11</p>
-<ul>
-<li><a
-href="https://drive.google.com/file/d/1OPtj8IbV3ncHBicHKAjQf_w2fMK7bQSg/view?usp=sharing">Slides</a></li>
-<li><a
-href="https://drive.google.com/file/d/14Sf8GYSIJ3gmua-qKu_pLrmwHpaAQNUo/view?usp=sharing">Slides
-with scribbles</a></li>
-</ul>
-<p><br></p>
-</div>
-<div id="lecture-6-inference" class="section level2">
-<h2>Lecture 6: Inference</h2>
-<p>Oct 18</p>
-<ul>
-<li><a
-href="https://drive.google.com/file/d/1fF3CCUc_vUSCzgZltRsVcjsXfiSNsTxk/view?usp=sharing">Slides</a></li>
-<li><a
-href="https://drive.google.com/file/d/1PrIdNUaPlK062CxmB5Z8wmo4FEM1LkF-/view?usp=sharing">Slides
-with scribbles</a></li>
-</ul>
-<p><br></p>
-</div>
-<div id="lecture-7-review" class="section level2">
-<h2>Lecture 7: Review</h2>
-<p>Oct 25</p>
-<ul>
-<li><a
-href="https://drive.google.com/file/d/15rwV2XO3j6oNFN1HTr9fW8NVS-vObpAS/view?usp=sharing">Slides</a></li>
-<li><a
-href="https://drive.google.com/file/d/1DadRX6EYO7pdt300_lD7XdMIJJbZUPsQ/view?usp=sharing">Slides
-with scribbles</a></li>
-</ul>
-<p><br></p>
-</div>
-<div id="lecture-8-nonparametrics" class="section level2">
-<h2>Lecture 8: Nonparametrics</h2>
-<p>Nov 15</p>
-<ul>
-<li><a
-href="https://drive.google.com/file/d/1q3hkMQ45JTs9QbD-GRs7vwMdCmot6kHq/view?usp=sharing">Slides</a></li>
-<li><a
-href="https://drive.google.com/file/d/1DHieaD05UD1cveQe2m_LyPEZIsmYECQU/view?usp=sharing">Slides
-with scribbles</a></li>
-</ul>
-<p><br></p>
-</div>
-<div id="lecture-9-parametrics" class="section level2">
-<h2>Lecture 9: Parametrics</h2>
-<p>Nov 22</p>
-<ul>
-<li><a
-href="https://drive.google.com/file/d/163WNi6bf_6ri22ZY33AaetH6uDOLfkPz/view?usp=sharing">Slides</a></li>
-<li><a
-href="https://drive.google.com/file/d/1Md9hz3DSkQPJOVZ5Ly2JTFIn1oPiuahP/view?usp=sharing">Slides
-with scribbles</a></li>
-</ul>
-<p><br></p>
-</div>
-<div id="lecture-10-more-mle" class="section level2">
-<h2>Lecture 10: More MLE</h2>
-<p>Nov 29</p>
-<ul>
-<li><a
-href="https://drive.google.com/file/d/1PUhqKmBFUdBWMWxrhb9o75uMSrIIJmD4/view?usp=sharing">Slides</a></li>
-<li><a
-href="https://drive.google.com/file/d/1Kvm_VuuHWiP96jt4rfrJMZ5BvqOfLBst/view?usp=sharing">Slides
-with scribbles</a></li>
-</ul>
-<p><br></p>
 </div>
 
 

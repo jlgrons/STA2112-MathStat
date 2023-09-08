@@ -13,7 +13,7 @@
 
 <title>Assignment Documents</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -144,11 +144,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -177,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -186,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -365,88 +362,17 @@ div.tocify {
 <hr />
 <p>All assignments will be posted to this section approximately 1-2
 weeks before the due date listed on the course schedule. Assignments are
-to be submitted through Quercus and are graded based on completion.</p>
-<p>Perusall assignments are to be submitted on the Perusall website. To
-receive full credit, you are to:</p>
-<ul>
-<li>Read the whole paper.</li>
-<li>Add at least 3 comments.</li>
-<li>Add an upvote to a comment/question from someone else.</li>
-</ul>
-<p>Note: Even though some assignments may appear short, they take longer
-than expected to complete. Please do not leave things until the last
-minute.</p>
+to be submitted through Quercus and are graded based on completion. Even
+though some assignments may appear short, they take longer than expected
+to complete. Please do not leave things until the last minute.</p>
 <p><br></p>
 <div id="assignment-1-probability" class="section level2">
 <h2>Assignment 1 (Probability)</h2>
-<p>Due Sept 27, 2022 at 9 am</p>
+<p>Due Sept 26, 2022 at 9 am</p>
 <p><a
 href="https://drive.google.com/file/d/1d-52W4AZN-YGdi6AV2OzxGWD5J886JcS/view?usp=sharing">Assignment
 Document</a></p>
-<p><a href="https://q.utoronto.ca/courses/273117/files">Assignment
-Solutions</a></p>
-</div>
-<div id="assignment-2-random-variables" class="section level2">
-<h2>Assignment 2 (Random Variables)</h2>
-<p>Due Oct 11, 2022 at 9 am</p>
-<p><a
-href="https://drive.google.com/drive/folders/1O708lq2WE6e_w3F-LM6ePvCkoTlkXUPB?usp=sharing">Assignment
-Document</a></p>
-<p><a href="https://q.utoronto.ca/courses/273117/files">Assignment
-Solutions</a></p>
-</div>
-<div id="assignment-3-convergence" class="section level2">
-<h2>Assignment 3 (Convergence)</h2>
-<p>Due Oct 25, 2022 at 9am</p>
-<p><a
-href="https://drive.google.com/file/d/1ScLoIVTKGqGElteXGfjic4e268kV1fVT/view?usp=sharing">Assignment
-Document</a></p>
-<p><em>Note</em>: Questions 4bc, 5, and 7 will be easier to answer after
-lecture on Oct 18.</p>
-<p><a href="https://q.utoronto.ca/courses/273117/files">Assignment
-Solutions</a></p>
-</div>
-<div id="final-project-sign-up" class="section level2">
-<h2>Final Project Sign-Up</h2>
-<p>Due Nov 5, 2022 at 9am</p>
-<p>Sign-up with one another person for the final project on this <a
-href="https://docs.google.com/spreadsheets/d/1LQhUz7_ng45QicVoRSQStZ_LKLacc_KQTr9ZqvsatRk/edit?usp=sharing">sheet</a>.
-This is worth 3 points of the final project grade</p>
-</div>
-<div id="final-project-paper-sign-up" class="section level2">
-<h2>Final Project Paper Sign-Up</h2>
-<p>Due Nov 18, 2022 at 9am</p>
-<p>Choose a paper for final project from the assignment document and
-write it on this <a
-href="https://docs.google.com/spreadsheets/d/1LQhUz7_ng45QicVoRSQStZ_LKLacc_KQTr9ZqvsatRk/edit?usp=sharing">sheet</a>.
-This is worth 1 point of the final project grade</p>
-</div>
-<div id="final-project" class="section level2">
-<h2>Final Project</h2>
-<p>Due Dec 6, 2022 at 9am</p>
-<p><a
-href="https://drive.google.com/file/d/1KJxSB6QepEJvUEWGa26BeF-fQIQsHEbV/view?usp=sharing">Assignment
-Document</a></p>
-<p><a
-href="https://drive.google.com/file/d/1ThiAcJv5YlPMYM45bwMSEouQpSwHA9J4/view?usp=sharing">Example
-slides 1</a></p>
-<p><a
-href="https://drive.google.com/file/d/1uvNmNj6H8XDtB_qNTVXhO6By_pg7iyI0/view?usp=sharing">Example
-slides 2</a></p>
-</div>
-<div id="homework-4-inference-i" class="section level2">
-<h2>Homework 4 (Inference I)</h2>
-<p>Due Nov 30, 2022 at 9am</p>
-<p><a
-href="https://drive.google.com/file/d/12viByrhR55IRuWQhhWvEb9wAA-vTaywe/view?usp=sharing">Assignment
-Document</a></p>
-</div>
-<div id="homework-5-inference-ii" class="section level2">
-<h2>Homework 5 (Inference II)</h2>
-<p>Due Dec 14, 2022 at 9am</p>
-<p><a
-href="https://drive.google.com/file/d/155WjMywiAXuIcuobkIQRIXgGM5da9VkY/view?usp=sharing">Assignment
-Document</a></p>
+<p>[Assignment Solutions]</p>
 </div>
 
 
