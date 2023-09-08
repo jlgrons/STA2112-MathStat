@@ -21,7 +21,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 ## <i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team
 - <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: [Jesse Gronsbell](https://sites.google.com/view/jgronsbell/home?authuser=0)
 
-- <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistant: [Jianhui Gao](https://sites.google.com/view/jianhuigao)
+- <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistant: Yeonjoon Choi, PhD student in Statistical Sciences
 
 <br>
 
@@ -29,9 +29,9 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-comment" aria-hidden="true"></i> Course Communication
 
-- <span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the [Discussion board](https://q.utoronto.ca/courses/273117/) integrated within Quercus, which students can access by logging in with their UTORID.  One of the instructors will try to answer promptly.  Please see the Course Policies section for more detail. 
+- <span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the [Discussion board](https://q.utoronto.ca/courses/316929/) integrated within Quercus, which students can access by logging in with their UTORID.  One of the instructors will try to answer promptly.  Please see the Course Policies section for more detail. 
 
-- <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> If you don't think your question is appropriate for the class discussion board (e.g.\ it is not related to course content or logistics), please reach out to the teaching team using the direct message functionality on Quercus.  Allow up to 72 business hours for a reply. Regular emails will not be answered. 
+- <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> If you don't think your question is appropriate for the class discussion board (e.g.\ it is not related to course content or logistics), please reach out to both the professor and the TA using the direct message functionality on Quercus.  Allow up to 48 business hours for a reply. Regular emails will not be answered. 
 
 <br>
 
@@ -39,13 +39,11 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 
-- Professor: Virtual from 2:00-3:00pm on Tuesdays. 
+- Teaching Assistant: Virtual from 1:30-2:30pm on Wednesdays 
 
-Zoom link:  https://utoronto.zoom.us/j/88068311938.
+Zoom link: https://utoronto.zoom.us/j/4541840375 (Passcode: 234912)
 
-- Teaching Assistants: Virtual from 3:00-4:00pm on Wednesdays. 
-
-Zoom link: https://utoronto.zoom.us/j/4709510697
+- Professor: You are welcome to talk to the instructor after class or arrange a time to talk.  Special office hours prior to the midterm exam will be arranged.  
 
 <br>
 
@@ -103,11 +101,11 @@ Students will be evaluated according to [University Assessment and Grading Pract
 
 ```{r, echo=FALSE}
 library(tidyverse)
-jsc270coursegrading <- read_csv("Fall2022_Grading.csv")
-knitr::kable(jsc270coursegrading[1:8,])
+coursegrading <- read_csv("Fall2022_Grading.csv")
+knitr::kable(coursegrading[1:7,])
 ```
 
-You are allowed one late day to use on a homework assignment (not a Perusall paper) at any time throughout the course.  You must write "I am using the late day" at the top of page 1.
+You are allowed one late day to use on a homework assignment at any time throughout the course.  You must write "I am using the late day" at the top of page 1.
 <br>
 
 ******
@@ -116,7 +114,7 @@ You are allowed one late day to use on a homework assignment (not a Perusall pap
 
 - Class slides, notes, and other important information can be found on the [course website.](https://sta2112.github.io/)
 
-- Questions and Answers can be posted on the [Quercus discussion board](https://q.utoronto.ca/courses/273117/).
+- Questions and Answers can be posted on the [Quercus discussion board](https://q.utoronto.ca/courses/316929/).
 
 
 <br>
@@ -131,9 +129,6 @@ Required texts:
 
 - *All of Statistics* by  L. Wasserman [[ecopy]](https://link.springer.com/book/10.1007/978-0-387-21736-9)
 
-- *Statistical Models * by A.C. Davison [[ecopy]](https://onesearch.library.utoronto.ca)
-
-
 Additional textbooks: 
 
 - *Statistical Inference* by  G. Casella & R.L. Berger [[hard cover]](https://blackwells.co.uk/bookshop/product/9780534243128?gC=4cfad707612)
@@ -142,23 +137,11 @@ Additional textbooks:
 
 - *Computer Age Statistical Inference* by  B. Efron & T. Hastie [[ecopy]](https://onesearch.library.utoronto.ca)
 
+- *Statistical Models * by A.C. Davison [[ecopy]](https://onesearch.library.utoronto.ca)
+
+
 <br>
 
-
-
-******
-
-## <i class="glyphicon glyphicon-edit" aria-hidden="true"></i> Perusall
-
-Perusall is an online tool that allows students to read and annotate course content. To get access to Perusall, please use the following link:
-
-Perusall: https://app.perusall.com/home
-
-You will need to sign up for a free account. Once your account is confirmed, you can enroll in this class using the course code: `GRONSBELL-JAU6J `. 
-
-Throughout the semester several papers will be posted for students to read and analyze. 
- 
-<br>
 
 
 ******
@@ -267,7 +250,7 @@ There may be times when you are unable to complete course work on time due to no
 
 ## <i class="fas fa-user-plus" aria-hidden="true"></i> Acknowledgements
 
-The following people have contributed to the design of the course materials and website: Prof. Jesse Gronsbell (2020-2022), Robert Zimmerman (2021), and Jianhui Gao (2022).
+The following people have contributed to the design of the course materials and website: Prof. Jesse Gronsbell (2020-2022) and Jianhui Gao (2022).
 <br>
 
 ****** 

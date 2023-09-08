@@ -13,7 +13,7 @@
 
 <title>STA2112: Mathematical Statistics I</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -29,14 +29,14 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -65,6 +65,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -85,6 +86,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -142,11 +146,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -175,8 +183,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -184,16 +192,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -310,7 +311,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -326,7 +327,7 @@ div.tocify {
   <a href="schedule.html">Schedule</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Course Documents
      
     <span class="caret"></span>
@@ -364,44 +365,67 @@ div.tocify {
 
 <p><br></p>
 <div id="teaching-team" class="section level2">
-<h2><i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team</h2>
+<h2><i class="fas fa-user-friends" aria-hidden="true"></i> Teaching
+Team</h2>
 <ul>
-<li><p><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: <a href="https://sites.google.com/view/jgronsbell/home?authuser=0">Jesse Gronsbell</a></p></li>
-<li><p><span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistant: <a href="https://sites.google.com/view/jianhuigao">Jianhui Gao</a></p></li>
+<li><p><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+Professor: <a
+href="https://sites.google.com/view/jgronsbell/home?authuser=0">Jesse
+Gronsbell</a></p></li>
+<li><p><span class="fas fa-user-friends" aria-hidden="true"></span>
+Teaching Assistant: Yeonjoon Choi, PhD student in Statistical
+Sciences</p></li>
 </ul>
 <p><br></p>
 <hr />
 </div>
 <div id="course-communication" class="section level2">
-<h2><i class="glyphicon glyphicon-comment" aria-hidden="true"></i> Course Communication</h2>
+<h2><i class="glyphicon glyphicon-comment" aria-hidden="true"></i>
+Course Communication</h2>
 <ul>
-<li><p><span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the <a href="https://q.utoronto.ca/courses/273117/">Discussion board</a> integrated within Quercus, which students can access by logging in with their UTORID. One of the instructors will try to answer promptly. Please see the Course Policies section for more detail.</p></li>
-<li><p><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> If you don’t think your question is appropriate for the class discussion board (e.g. it is not related to course content or logistics), please reach out to the teaching team using the direct message functionality on Quercus. Allow up to 72 business hours for a reply. Regular emails will not be answered.</p></li>
+<li><p><span class="fas fa-question" aria-hidden="true"></span>
+Questions about this course should be directed to the <a
+href="https://q.utoronto.ca/courses/316929/">Discussion board</a>
+integrated within Quercus, which students can access by logging in with
+their UTORID. One of the instructors will try to answer promptly. Please
+see the Course Policies section for more detail.</p></li>
+<li><p><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+If you don’t think your question is appropriate for the class discussion
+board (e.g. it is not related to course content or logistics), please
+reach out to both the professor and the TA using the direct message
+functionality on Quercus. Allow up to 48 business hours for a reply.
+Regular emails will not be answered.</p></li>
 </ul>
 <p><br></p>
 <hr />
 </div>
 <div id="office-hours" class="section level2">
-<h2><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours</h2>
+<h2><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office
+Hours</h2>
 <ul>
-<li>Professor: Virtual from 2:00-3:00pm on Tuesdays.</li>
+<li>Teaching Assistant: Virtual from 1:30-2:30pm on Wednesdays</li>
 </ul>
-<p>Zoom link: <a href="https://utoronto.zoom.us/j/88068311938" class="uri">https://utoronto.zoom.us/j/88068311938</a>.</p>
+<p>Zoom link: <a href="https://utoronto.zoom.us/j/4541840375"
+class="uri">https://utoronto.zoom.us/j/4541840375</a> (Passcode:
+234912)</p>
 <ul>
-<li>Teaching Assistants: Virtual from 3:00-4:00pm on Wednesdays.</li>
+<li>Professor: You are welcome to talk to the instructor after class or
+arrange a time to talk. Special office hours prior to the midterm exam
+will be arranged.</li>
 </ul>
-<p>Zoom link: <a href="https://utoronto.zoom.us/j/4709510697" class="uri">https://utoronto.zoom.us/j/4709510697</a></p>
 <p><br></p>
 <hr />
 </div>
 <div id="class-times-and-location" class="section level2">
-<h2><i class="glyphicon glyphicon-blackboard" aria-hidden="true"></i> Class Times and Location</h2>
+<h2><i class="glyphicon glyphicon-blackboard" aria-hidden="true"></i>
+Class Times and Location</h2>
 <p><br></p>
 <div id="lectures" class="section level3">
 <h3><em>Lectures</em></h3>
 <ul>
 <li>Tuesday, 10-12pm EST</li>
-<li>All lecture slides will be posted to the course website once the lecture is finished.</li>
+<li>All lecture slides will be posted to the course website once the
+lecture is finished.</li>
 </ul>
 <p><br></p>
 </div>
@@ -409,34 +433,46 @@ div.tocify {
 <h3><em>Tutorials</em></h3>
 <ul>
 <li>Tuesday, 12-1pm EST</li>
-<li>All content will be posted to the course website once the lab is finished.</li>
+<li>All content will be posted to the course website once the lab is
+finished.</li>
 </ul>
 <p><br></p>
 <hr />
 </div>
 </div>
 <div id="course-description" class="section level2">
-<h2><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Course Description</h2>
-<p>This course is designed for graduate students in Statistics, Biostatistics, and Computer Science</p>
-<p>Review of probability theory, convergence of random variables, statistical models, statistical functionals, maximum likelihood estimation, and computational methods.</p>
+<h2><span class="glyphicon glyphicon-education"
+aria-hidden="true"></span> Course Description</h2>
+<p>This course is designed for graduate students in Statistics,
+Biostatistics, and Computer Science</p>
+<p>Review of probability theory, convergence of random variables,
+statistical models, statistical functionals, maximum likelihood
+estimation, and computational methods.</p>
 <p><br></p>
 <hr />
 </div>
 <div id="learning-objectives" class="section level2">
-<h2><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Learning objectives</h2>
+<h2><span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+Learning objectives</h2>
 <p>By the end of this course, you should be able to:</p>
 <ul>
 <li><p>Understand basic probability theory.</p></li>
 <li><p>Evaluate convergence of sequences of random variables</p></li>
-<li><p>Assess properties of estimators, primarily when <span class="math inline">\(n\)</span> is large (ie. asymptotics).</p></li>
-<li><p>Use fundamental estimation and inference procedures (eg. MLE, bootstrap).</p></li>
+<li><p>Assess properties of estimators, primarily when <span
+class="math inline">\(n\)</span> is large (ie. asymptotics).</p></li>
+<li><p>Use fundamental estimation and inference procedures (eg. MLE,
+bootstrap).</p></li>
 </ul>
 <p><br></p>
 <hr />
 </div>
 <div id="evaluation" class="section level2">
-<h2><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Evaluation</h2>
-<p>Students will be evaluated according to <a href="https://governingcouncil.utoronto.ca/secretariat/policies/grading-practices-policy-university-assessment-and-january-26-2012">University Assessment and Grading Practices Policy</a>. The table below shows the weight of each assessment.</p>
+<h2><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+Evaluation</h2>
+<p>Students will be evaluated according to <a
+href="https://governingcouncil.utoronto.ca/secretariat/policies/grading-practices-policy-university-assessment-and-january-26-2012">University
+Assessment and Grading Practices Policy</a>. The table below shows the
+weight of each assessment.</p>
 <table>
 <thead>
 <tr class="header">
@@ -447,46 +483,48 @@ div.tocify {
 <tbody>
 <tr class="odd">
 <td align="left">Assignment 1</td>
-<td align="left">2%</td>
+<td align="left">3%</td>
 </tr>
 <tr class="even">
 <td align="left">Assignment 2</td>
-<td align="left">2%</td>
+<td align="left">3%</td>
 </tr>
 <tr class="odd">
 <td align="left">Assignment 3</td>
-<td align="left">2%</td>
+<td align="left">3%</td>
 </tr>
 <tr class="even">
 <td align="left">Assignment 4</td>
-<td align="left">2%</td>
+<td align="left">3%</td>
 </tr>
 <tr class="odd">
 <td align="left">Assignment 5</td>
-<td align="left">2%</td>
+<td align="left">3%</td>
 </tr>
 <tr class="even">
-<td align="left">Perusall Papers (3)</td>
-<td align="left">6%</td>
+<td align="left">Midterm</td>
+<td align="left">43%</td>
 </tr>
 <tr class="odd">
-<td align="left">Midterm</td>
-<td align="left">42%</td>
-</tr>
-<tr class="even">
 <td align="left">Final Project</td>
 <td align="left">42%</td>
 </tr>
 </tbody>
 </table>
-<p>You are allowed one late day to use on a homework assignment (not a Perusall paper) at any time throughout the course. You must write “I am using the late day” at the top of page 1. <br></p>
+<p>You are allowed one late day to use on a homework assignment at any
+time throughout the course. You must write “I am using the late day” at
+the top of page 1. <br></p>
 <hr />
 </div>
 <div id="course-websites" class="section level2">
-<h2><span class="fas fa-globe" aria-hidden="true"></span> Course Websites</h2>
+<h2><span class="fas fa-globe" aria-hidden="true"></span> Course
+Websites</h2>
 <ul>
-<li><p>Class slides, notes, and other important information can be found on the <a href="https://sta2112.github.io/">course website.</a></p></li>
-<li><p>Questions and Answers can be posted on the <a href="https://q.utoronto.ca/courses/273117/">Quercus discussion board</a>.</p></li>
+<li><p>Class slides, notes, and other important information can be found
+on the <a href="https://sta2112.github.io/">course website.</a></p></li>
+<li><p>Questions and Answers can be posted on the <a
+href="https://q.utoronto.ca/courses/316929/">Quercus discussion
+board</a>.</p></li>
 </ul>
 <p><br></p>
 <hr />
@@ -495,70 +533,115 @@ div.tocify {
 <h2><i class="fas fa-book" aria-hidden="true"></i> Textbooks</h2>
 <p>Required texts:</p>
 <ul>
-<li><p><em>Mathematical Statistics</em> by K. Knight <a href="https://www.routledge.com/Mathematical-Statistics/Knight/p/book/9781584881780">[hard copy]</a></p></li>
-<li><p><em>All of Statistics</em> by L. Wasserman <a href="https://link.springer.com/book/10.1007/978-0-387-21736-9">[ecopy]</a></p></li>
-<li><p><em>Statistical Models </em> by A.C. Davison <a href="https://onesearch.library.utoronto.ca">[ecopy]</a></p></li>
+<li><p><em>Mathematical Statistics</em> by K. Knight <a
+href="https://www.routledge.com/Mathematical-Statistics/Knight/p/book/9781584881780">[hard
+copy]</a></p></li>
+<li><p><em>All of Statistics</em> by L. Wasserman <a
+href="https://link.springer.com/book/10.1007/978-0-387-21736-9">[ecopy]</a></p></li>
 </ul>
 <p>Additional textbooks:</p>
 <ul>
-<li><p><em>Statistical Inference</em> by G. Casella &amp; R.L. Berger <a href="https://blackwells.co.uk/bookshop/product/9780534243128?gC=4cfad707612">[hard cover]</a></p></li>
-<li><p><em>Elements of Large Sample Theory</em> by E.L. Lehmann <a href="https://onesearch.library.utoronto.ca">[ecopy]</a></p></li>
-<li><p><em>Computer Age Statistical Inference</em> by B. Efron &amp; T. Hastie <a href="https://onesearch.library.utoronto.ca">[ecopy]</a></p></li>
+<li><p><em>Statistical Inference</em> by G. Casella &amp; R.L. Berger <a
+href="https://blackwells.co.uk/bookshop/product/9780534243128?gC=4cfad707612">[hard
+cover]</a></p></li>
+<li><p><em>Elements of Large Sample Theory</em> by E.L. Lehmann <a
+href="https://onesearch.library.utoronto.ca">[ecopy]</a></p></li>
+<li><p><em>Computer Age Statistical Inference</em> by B. Efron &amp; T.
+Hastie <a
+href="https://onesearch.library.utoronto.ca">[ecopy]</a></p></li>
+<li><p><em>Statistical Models </em> by A.C. Davison <a
+href="https://onesearch.library.utoronto.ca">[ecopy]</a></p></li>
 </ul>
-<p><br></p>
-<hr />
-</div>
-<div id="perusall" class="section level2">
-<h2><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> Perusall</h2>
-<p>Perusall is an online tool that allows students to read and annotate course content. To get access to Perusall, please use the following link:</p>
-<p>Perusall: <a href="https://app.perusall.com/home" class="uri">https://app.perusall.com/home</a></p>
-<p>You will need to sign up for a free account. Once your account is confirmed, you can enroll in this class using the course code: <code>GRONSBELL-JAU6J</code>.</p>
-<p>Throughout the semester several papers will be posted for students to read and analyze.</p>
 <p><br></p>
 <hr />
 </div>
 <div id="computing" class="section level2">
 <h2><i class="fas fa-code" aria-hidden="true"></i> Computing</h2>
-<p>The course will use <a href="https://www.r-project.org">R</a> for computing. I highly recommend the <a href="https://www.rstudio.com">RStudio</a> environment. You will need to install both of these on your computer.</p>
-<p>You can download R from <a href="https://cran.r-project.org/">CRAN</a> and the free Desktop Version of Rstudio <a href="https://rstudio.com/products/rstudio/#rstudio-desktop">here</a>.</p>
-<p>I also strongly recommend using <a href="https://rmarkdown.rstudio.com">R Markdown</a> to produce documents for your analyses.</p>
-<p>There are many online resources for R and Rstudio, including the R those on the R resources section of this website and some recommended resources listed below.</p>
+<p>The course will use <a href="https://www.r-project.org">R</a> for
+computing. I highly recommend the <a
+href="https://www.rstudio.com">RStudio</a> environment. You will need to
+install both of these on your computer.</p>
+<p>You can download R from <a
+href="https://cran.r-project.org/">CRAN</a> and the free Desktop Version
+of Rstudio <a
+href="https://rstudio.com/products/rstudio/#rstudio-desktop">here</a>.</p>
+<p>I also strongly recommend using <a
+href="https://rmarkdown.rstudio.com">R Markdown</a> to produce documents
+for your analyses.</p>
+<p>There are many online resources for R and Rstudio, including the R
+those on the R resources section of this website and some recommended
+resources listed below.</p>
 <ul>
-<li>If you are new to R, you can take a look at <a href="https://www.statmethods.net">Quick-R</a>.</li>
-<li>If you are experienced with R, the <a href="https://www.rstudio.com/resources/cheatsheets/">Cheatsheets</a> are invaluable.<br />
+<li>If you are new to R, you can take a look at <a
+href="https://www.statmethods.net">Quick-R</a>.</li>
+<li>If you are experienced with R, the <a
+href="https://www.rstudio.com/resources/cheatsheets/">Cheatsheets</a>
+are invaluable.<br />
 </li>
-<li>You can also check out our <a href="https://jlgrons.github.io/UofT-DoSS-SPB/methods_computing.html">computing materials</a> from the summer bootcamp offered by the department. <br></li>
+<li>You can also check out our <a
+href="https://jlgrons.github.io/UofT-DoSS-SPB/methods_computing.html">computing
+materials</a> from the summer bootcamp offered by the department.
+<br></li>
 </ul>
 <hr />
 </div>
 <div id="course-policies" class="section level2">
-<h2><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Course Policies</h2>
+<h2><span class="glyphicon glyphicon-info-sign"
+aria-hidden="true"></span> Course Policies</h2>
 <p><br></p>
 <div id="missed_work" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Missed Work Policy</h3>
-<p>Valid reasons for missing an assessment include: illness, injury, or other relevant personal issues. Any of the following types of documentation will be accepted to verify a student’s reason for missing an assessment:</p>
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+Missed Work Policy</h3>
+<p>Valid reasons for missing an assessment include: illness, injury, or
+other relevant personal issues. Any of the following types of
+documentation will be accepted to verify a student’s reason for missing
+an assessment:</p>
 <ul>
-<li><p><a href="http://www.illnessverification.utoronto.ca/index.php">University of Toronto Verification of Student Illness or Injury form</a>. The form must indicate that the degree of incapacitation on academic functioning is moderate, serious, or severe in order to be considered a valid medical reason for missing.</p></li>
+<li><p><a
+href="http://www.illnessverification.utoronto.ca/index.php">University
+of Toronto Verification of Student Illness or Injury form</a>. The form
+must indicate that the degree of incapacitation on academic functioning
+is moderate, serious, or severe in order to be considered a valid
+medical reason for missing.</p></li>
 <li><p>Student Health or Disability Related Certificate.</p></li>
 <li><p>A College Registrar’s Letter.</p></li>
 <li><p>Accessibility Services Letter.</p></li>
 </ul>
-<p>If an assignment due date is missed for a valid reason then your assignment will not be subject to a late penalty.</p>
-<p>Other reasons for missing an assignment due date, without documentation, will require prior approval by your instructor. If prior approval is not received and an assessment is not submitted on time then your assessment will be subject to a late penalty (see <a href="#late_penalty">Late Penalty</a>).</p>
+<p>If an assignment due date is missed for a valid reason then your
+assignment will not be subject to a late penalty.</p>
+<p>Other reasons for missing an assignment due date, without
+documentation, will require prior approval by your instructor. If prior
+approval is not received and an assessment is not submitted on time then
+your assessment will be subject to a late penalty (see <a
+href="#late_penalty">Late Penalty</a>).</p>
 <p><br></p>
 </div>
 <div id="late_penalty" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Late Penalty</h3>
-<p>The late penalty for a missed due date is 20% per day (i.e., 24 hours). For example, if the work is submitted after 5 days (including weekend days and holidays) then you will receive a grade of zero for the missed work.</p>
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+Late Penalty</h3>
+<p>The late penalty for a missed due date is 20% per day (i.e., 24
+hours). For example, if the work is submitted after 5 days (including
+weekend days and holidays) then you will receive a grade of zero for the
+missed work.</p>
 <p><br></p>
 </div>
 <div id="marking-concerns" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Marking Concerns</h3>
-<p>Any requests to have your work remarked must contain a written justification for consideration. Remarking requests should be made within one week of receiving your marked work. Re-evaluation appeals are at the discretion of the instructors. Note that adjustments in marks will be rare and could equally result in a lowering or raising of the mark. If a re-revaluation is completed by the instructors, the student must accept the resulting mark as the new mark, whether it goes up or down or remains the same. When appealing a re-evaluation decision, the student accepts this condition.</p>
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+Marking Concerns</h3>
+<p>Any requests to have your work remarked must contain a written
+justification for consideration. Remarking requests should be made
+within one week of receiving your marked work. Re-evaluation appeals are
+at the discretion of the instructors. Note that adjustments in marks
+will be rare and could equally result in a lowering or raising of the
+mark. If a re-revaluation is completed by the instructors, the student
+must accept the resulting mark as the new mark, whether it goes up or
+down or remains the same. When appealing a re-evaluation decision, the
+student accepts this condition.</p>
 <p><br></p>
 </div>
 <div id="communicating" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Communicating with the teaching team</h3>
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+Communicating with the teaching team</h3>
 <p>Questions about course material or organization, such as,</p>
 <ul>
 <li>Is it appropriate to use this statistical method?</li>
@@ -566,44 +649,112 @@ div.tocify {
 <li>What is the due date?</li>
 </ul>
 <p>should be posted on the Quercus discussion board.</p>
-<p>If your communication is private, such as, “I missed the test because I was ill”, then contact your instructor.</p>
-<p>Always use the direct messaging functionality on <a href="https://q.utoronto.ca/">Quercus</a> to ensure that your message reaches out the instructor and/or TA’s. Allow up to 72 business hours for a reply. Regular emails will not be answered.</p>
+<p>If your communication is private, such as, “I missed the test because
+I was ill”, then contact your instructor.</p>
+<p>Always use the direct messaging functionality on <a
+href="https://q.utoronto.ca/">Quercus</a> to ensure that your message
+reaches out the instructor and/or TA’s. Allow up to 72 business hours
+for a reply. Regular emails will not be answered.</p>
 <p><br></p>
 </div>
 <div id="academic-integrity" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Academic Integrity</h3>
-<p>You are responsible for knowing the content of the <a href="http://www.governingcouncil.utoronto.ca/policies/behaveac.htm">University of Toronto’s Code of Behaviour on Academic Matters</a>.</p>
-<p>As a general rule, we encourage you to discuss course material with each other and ask others for advice. However, it is not permitted to share complete solutions or to directly share code for anything that is to be handed in. When an assignment is required to be completed as a team, you may share solutions and code with other members of your team, but not with another team in the class. For example, “For question 2.1 what R function did you use?” is a fair question; “Please show me your code for question 2.1” is not.</p>
-<p>If you have any questions about what is or is not permitted in this course, please do not hesitate to contact <a href="https://q.utoronto.ca/">the professor and/or teaching assistants via Quercus</a>.</p>
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+Academic Integrity</h3>
+<p>You are responsible for knowing the content of the <a
+href="http://www.governingcouncil.utoronto.ca/policies/behaveac.htm">University
+of Toronto’s Code of Behaviour on Academic Matters</a>.</p>
+<p>As a general rule, we encourage you to discuss course material with
+each other and ask others for advice. However, it is not permitted to
+share complete solutions or to directly share code for anything that is
+to be handed in. When an assignment is required to be completed as a
+team, you may share solutions and code with other members of your team,
+but not with another team in the class. For example, “For question 2.1
+what R function did you use?” is a fair question; “Please show me your
+code for question 2.1” is not.</p>
+<p>If you have any questions about what is or is not permitted in this
+course, please do not hesitate to contact <a
+href="https://q.utoronto.ca/">the professor and/or teaching assistants
+via Quercus</a>.</p>
 <p><br></p>
 </div>
 <div id="accessibility-needs" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accessibility Needs</h3>
-<p>Students with diverse learning styles and needs are welcome in this course. If you have an acute or ongoing disability issue or accommodation need, you should register with Accessibility Services (AS) at the beginning of the academic year by visiting <a href="http://www.studentlife.utoronto.ca/as/new-registration">http://www.studentlife.utoronto.ca/as/new-registration</a>. Without registration, you will not be able to verify your situation with your instructors, and instructors will not be advised about your accommodation needs. AS will assess your situation, develop an accommodation plan with you, and support you in requesting accommodation for your course work. Remember that the process of accommodation is private: AS will not share details of your needs or condition with any instructor, and your instructors will not reveal that you are registered with AS</p>
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+Accessibility Needs</h3>
+<p>Students with diverse learning styles and needs are welcome in this
+course. If you have an acute or ongoing disability issue or
+accommodation need, you should register with Accessibility Services (AS)
+at the beginning of the academic year by visiting <a
+href="http://www.studentlife.utoronto.ca/as/new-registration">http://www.studentlife.utoronto.ca/as/new-registration</a>.
+Without registration, you will not be able to verify your situation with
+your instructors, and instructors will not be advised about your
+accommodation needs. AS will assess your situation, develop an
+accommodation plan with you, and support you in requesting accommodation
+for your course work. Remember that the process of accommodation is
+private: AS will not share details of your needs or condition with any
+instructor, and your instructors will not reveal that you are registered
+with AS</p>
 <p><br></p>
 </div>
 <div id="religious-accomodations" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Religious Accomodations</h3>
-<p>As a student at the University of Toronto, you are part of a diverse community that welcomes and includes students and faculty from a wide range of cultural and religious traditions. For my part, I will make every reasonable effort to avoid scheduling tests, examinations, or other compulsory activities on religious holy days not captured by statutory holidays. Further to University Policy, if you anticipate being absent from class or missing a major course activity (such as a test or in-class assignment) due to a religious observance, please let me know as early in the course as possible, and with sufficient notice (at least two to three weeks), so that we can work together to make alternate arrangements.</p>
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+Religious Accomodations</h3>
+<p>As a student at the University of Toronto, you are part of a diverse
+community that welcomes and includes students and faculty from a wide
+range of cultural and religious traditions. For my part, I will make
+every reasonable effort to avoid scheduling tests, examinations, or
+other compulsory activities on religious holy days not captured by
+statutory holidays. Further to University Policy, if you anticipate
+being absent from class or missing a major course activity (such as a
+test or in-class assignment) due to a religious observance, please let
+me know as early in the course as possible, and with sufficient notice
+(at least two to three weeks), so that we can work together to make
+alternate arrangements.</p>
 <p><br></p>
 </div>
 <div id="specific-medical-circumstances" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Specific Medical Circumstances</h3>
-<p>If you become ill and it affects your ability to do your academic work, consult me right away. Normally, I will ask you for medical documentation in support of your specific medical circumstances. The University’s Verification of Student Illness or Injury (VOI) form is recommended because it indicates the impact and severity of the illness, while protecting your privacy about the details of the nature of the illness. You can submit a different form (like a letter from a doctor), as long as it is an original document, and it contains the same information as the VOI. For more information, please see <a href="http://www.illnessverification.utoronto.ca">http://www.illnessverification.utoronto.ca</a> If you get a concussion, break your hand, or suffer some other acute injury, you should register with Accessibility Services as soon as possible.</p>
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+Specific Medical Circumstances</h3>
+<p>If you become ill and it affects your ability to do your academic
+work, consult me right away. Normally, I will ask you for medical
+documentation in support of your specific medical circumstances. The
+University’s Verification of Student Illness or Injury (VOI) form is
+recommended because it indicates the impact and severity of the illness,
+while protecting your privacy about the details of the nature of the
+illness. You can submit a different form (like a letter from a doctor),
+as long as it is an original document, and it contains the same
+information as the VOI. For more information, please see <a
+href="http://www.illnessverification.utoronto.ca">http://www.illnessverification.utoronto.ca</a>
+If you get a concussion, break your hand, or suffer some other acute
+injury, you should register with Accessibility Services as soon as
+possible.</p>
 <p><br></p>
 </div>
 <div id="accommodation-for-personal-reasons" class="section level3">
-<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Accommodation for Personal Reasons</h3>
-<p>There may be times when you are unable to complete course work on time due to non-medical reasons. If you have concerns, speak to me or to an advisor in the Registrar’s office; they can help you to decide if you want to request an extension or accommodation. They may be able to provide you with a Registrar’s letter of support to give to your instructors, and importantly, connect you with other resources on campus for help with your situation.</p>
+<h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
+Accommodation for Personal Reasons</h3>
+<p>There may be times when you are unable to complete course work on
+time due to non-medical reasons. If you have concerns, speak to me or to
+an advisor in the Registrar’s office; they can help you to decide if you
+want to request an extension or accommodation. They may be able to
+provide you with a Registrar’s letter of support to give to your
+instructors, and importantly, connect you with other resources on campus
+for help with your situation.</p>
 <p><br></p>
 <hr />
 </div>
 </div>
 <div id="acknowledgements" class="section level2">
-<h2><i class="fas fa-user-plus" aria-hidden="true"></i> Acknowledgements</h2>
-<p>The following people have contributed to the design of the course materials and website: Prof. Jesse Gronsbell (2020-2022), Robert Zimmerman (2021), and Jianhui Gao (2022). <br></p>
+<h2><i class="fas fa-user-plus" aria-hidden="true"></i>
+Acknowledgements</h2>
+<p>The following people have contributed to the design of the course
+materials and website: Prof. Jesse Gronsbell (2020-2022) and Jianhui Gao
+(2022). <br></p>
 <hr />
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This
+website is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+Commons Attribution-NonCommercial-ShareAlike 4.0 International
+License</a>.</p>
 </div>
 
 
