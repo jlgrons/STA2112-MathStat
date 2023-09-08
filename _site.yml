@@ -1,7 +1,7 @@
 name: sta2112website
 output_dir: '.'
 navbar:
-  title: STA2112 Fall 2022
+  title: STA2112 
   left:
     - text: Syllabus
       href: syllabus.html

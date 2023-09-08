@@ -17,8 +17,6 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 ******
 
-Documents from class will be posted on this page.
-
 <br>
 
 ## Lecture 1: Probability I 

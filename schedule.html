@@ -13,7 +13,7 @@
 
 <title>schedule.knit</title>
 
-<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -29,14 +29,14 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
@@ -185,8 +185,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -194,16 +194,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -325,7 +318,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">STA2112 Fall 2022</a>
+      <a class="navbar-brand" href="index.html">STA2112</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -408,20 +401,19 @@ Due Dates
 1
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Sept 13
+Sept 12
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Lecture 1
+Lecture
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Probability I
+Probability Review
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Course Introduction; Probability Measures; Random Variables (RVs); PDFs,
-PMFs, &amp; CDFs
+Course Introduction
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Knight Chp 1
+Knight Chp 1 + 2
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 </td>
@@ -432,10 +424,10 @@ Knight Chp 1
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Lab 1
+Lab
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-No Lab
+Probability Review
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 </td>
@@ -449,23 +441,21 @@ No Lab
 2
 </td>
 <td style="text-align:left;">
-Sept 20
+Sept 19
 </td>
 <td style="text-align:left;">
-Lecture 2
+Lecture
 </td>
 <td style="text-align:left;">
-Probabilty II
+Inequalities
 </td>
 <td style="text-align:left;">
-Expectation &amp; Transformation; Random Vectors; Joint and conditional
-distributions; Independence
+Concentration inequalities; Expectation Inequalities
 </td>
 <td style="text-align:left;">
-Knight Chp 1 + 2
+Wasserman Chp 4
 </td>
 <td style="text-align:left;">
-Perusall 1
 </td>
 </tr>
 <tr>
@@ -474,10 +464,10 @@ Perusall 1
 <td style="text-align:left;">
 </td>
 <td style="text-align:left;">
-Lab 2
+Lab
 </td>
 <td style="text-align:left;">
-Probability I
+Normal Distribution Properties
 </td>
 <td style="text-align:left;">
 </td>
@@ -491,20 +481,19 @@ Probability I
 3
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Sept 27
+Sept 26
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Lecture 3
+Lecture
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Conditional Expectation &amp; Inequalities
+Convergence
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Covariance &amp; Correlation; Conditional expectation; Concentration
-inequalities; Expectation Inequalities
+Modes of Convergence; Convergence relationships
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Wasserman Chp 4
+Knight Chp 3; Wasserman Chp 5
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 Assignment 1
@@ -516,10 +505,10 @@ Assignment 1
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Lab 3
+Lab
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Probability II
+Inequalities
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 </td>
@@ -533,16 +522,16 @@ Probability II
 4
 </td>
 <td style="text-align:left;">
-Oct 4
+Oct 3
 </td>
 <td style="text-align:left;">
-Lecture 4
+Lecture
 </td>
 <td style="text-align:left;">
-Convergence I
+Limit Theorems
 </td>
 <td style="text-align:left;">
-Modes of Convergence; Convergence relationships
+CLT; LLN; Delta method
 </td>
 <td style="text-align:left;">
 Knight Chp 3; Wasserman Chp 5
@@ -556,10 +545,10 @@ Knight Chp 3; Wasserman Chp 5
 <td style="text-align:left;">
 </td>
 <td style="text-align:left;">
-Lab 4
+Lab 5
 </td>
 <td style="text-align:left;">
-Conditional Expectation &amp; Inequalities
+Convergence
 </td>
 <td style="text-align:left;">
 </td>
@@ -573,19 +562,20 @@ Conditional Expectation &amp; Inequalities
 5
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Oct 11
+Oct 10
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Lecture 5
+Lecture
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Convergence II
+Inference
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-CLT; LLN; Delta method
+Statistical Models and Inference; Parametric and nonparmetric models;
+Goals of inference; Inferential frameworks
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Knight Chp 3; Wasserman Chp 5
+Knight Chp 4; Davison Chp 1
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 Assignment 2
@@ -597,10 +587,10 @@ Assignment 2
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Lab 5
+Lab
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Convergence I
+Limit Theorems
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 </td>
@@ -614,167 +604,10 @@ Convergence I
 6
 </td>
 <td style="text-align:left;">
-Oct 18
+Oct 17
 </td>
 <td style="text-align:left;">
-Lecture 6
-</td>
-<td style="text-align:left;">
-Limit Theorems
-</td>
-<td style="text-align:left;">
-Statistical Models and Inference; Parametric and nonparmetric models;
-Goals of inference; Inferential frameworks
-</td>
-<td style="text-align:left;">
-Knight Chp 4; Davison Chp 1
-</td>
-<td style="text-align:left;">
-Perusall 2
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-Lab 6
-</td>
-<td style="text-align:left;">
-Convergence II
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;background-color: #D7E6E7 !important;">
-7
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-Oct 25
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-Lecture 7
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-Midterm Review
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-Assignment 3
-</td>
-</tr>
-<tr>
-<td style="text-align:right;background-color: #D7E6E7 !important;">
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-Lab 7
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-Midterm Review
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:left;">
-Nov1
-</td>
-<td style="text-align:left;">
-Lecture 8
-</td>
-<td style="text-align:left;">
-Midterm Exam
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-Lab 8
-</td>
-<td style="text-align:left;">
-No Lab
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;background-color: #D7E6E7 !important;">
-9
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-Nov 8
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-Lecture 9
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-READING WEEK
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;background-color: #D7E6E7 !important;">
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-Lab 9
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-READING WEEK
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-<td style="text-align:left;background-color: #D7E6E7 !important;">
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:left;">
-Nov 15
-</td>
-<td style="text-align:left;">
-Lecture 10
+Lecture
 </td>
 <td style="text-align:left;">
 Nonparametric Estimation
@@ -794,10 +627,165 @@ Knight Chp 4; Davison Chps 1 and 2
 <td style="text-align:left;">
 </td>
 <td style="text-align:left;">
-Lab 10
+Lab
 </td>
 <td style="text-align:left;">
-Statistical Models and Inference
+Inference
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #D7E6E7 !important;">
+7
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+Oct 24
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+Lecture
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+Midterm Review
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+Assignment 3
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #D7E6E7 !important;">
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+Lab
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+Midterm Review
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+Oct 31
+</td>
+<td style="text-align:left;">
+Lecture
+</td>
+<td style="text-align:left;">
+Midterm Exam
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Lab
+</td>
+<td style="text-align:left;">
+No Lab
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #D7E6E7 !important;">
+9
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+Nov 7
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+Lecture
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+READING WEEK
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;background-color: #D7E6E7 !important;">
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+Lab
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+READING WEEK
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+<td style="text-align:left;background-color: #D7E6E7 !important;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+Nov 14
+</td>
+<td style="text-align:left;">
+Lecture
+</td>
+<td style="text-align:left;">
+Likelihoood I
+</td>
+<td style="text-align:left;">
+Likelihood function; Likelihood principle; Asymptotic theory
+</td>
+<td style="text-align:left;">
+Knight Chp 5; Davison Chp 4
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Lab
+</td>
+<td style="text-align:left;">
+Nonparametrics
 </td>
 <td style="text-align:left;">
 </td>
@@ -811,22 +799,21 @@ Statistical Models and Inference
 11
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Nov 22
+Nov 21
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Lecture 11
+Lecture
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Likelihoood I
+Likelihoood II
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Likelihood function; Likelihood principle; Asymptotic theory
+Penalized likelihood
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Knight Chp 5; Davison Chp 4
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Perusall 3
+Assignment 4
 </td>
 </tr>
 <tr>
@@ -835,10 +822,10 @@ Perusall 3
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Lab 11
+Lab
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Final Project Working Session
+Likelihood
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 </td>
@@ -852,22 +839,20 @@ Final Project Working Session
 12
 </td>
 <td style="text-align:left;">
-Nov 29
+Nov 28
 </td>
 <td style="text-align:left;">
-Lecture 12
+Lecture
 </td>
 <td style="text-align:left;">
-Likelihood II
+Likelihood III
 </td>
 <td style="text-align:left;">
 Misspecified Models; Numerical computation of MLEs
 </td>
 <td style="text-align:left;">
-Knight Chp 5; Davison Chp 4
 </td>
 <td style="text-align:left;">
-Assignment 4
 </td>
 </tr>
 <tr>
@@ -876,10 +861,10 @@ Assignment 4
 <td style="text-align:left;">
 </td>
 <td style="text-align:left;">
-Lab 12
+Lab
 </td>
 <td style="text-align:left;">
-Likelihood I
+Final Project Working Session
 </td>
 <td style="text-align:left;">
 </td>
@@ -893,7 +878,7 @@ Likelihood I
 13
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
-Dec 6
+Dec 5
 </td>
 <td style="text-align:left;background-color: #D7E6E7 !important;">
 Lecture 13
@@ -935,11 +920,9 @@ No Lab
 <div id="evaluation-details" class="section level1">
 <h1><span class="glyphicon glyphicon-calendar"
 aria-hidden="true"></span> Evaluation Details</h1>
-<p>Assignmentsare to be submitted via Quercus. Perusall papers are
-completed within the Perusall application.</p>
-<p>The deadline for submission for assignments, Perusall papers, and
-reflection quizzes is always 9:00am EST on the due date (1 hour before
-class starts).</p>
+<p>Assignments are to be submitted via Quercus. The deadline for
+submission is always 9:00am EST on the due date (1 hour before class
+starts).</p>
 <!-- # ```{r, echo=FALSE} -->
 <!-- # library(tidyverse) -->
 <!-- # library(kableExtra) -->

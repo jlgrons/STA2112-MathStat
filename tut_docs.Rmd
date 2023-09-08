@@ -15,7 +15,6 @@ library(tidyverse)
 
 ******
 
-Documents from tutorials will be posted on this page.
 
 <br>
 
