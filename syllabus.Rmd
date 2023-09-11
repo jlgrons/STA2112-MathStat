@@ -21,7 +21,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 ## <i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team
 - <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: [Jesse Gronsbell](https://sites.google.com/view/jgronsbell/home?authuser=0)
 
-- <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistant: Yeonjoon Choi, PhD student in Statistical Sciences
+- <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistant: Yeonjoon (Philip) Choi, PhD student in Statistical Sciences
 
 <br>
 
