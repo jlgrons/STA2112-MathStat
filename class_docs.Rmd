@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 Sept 12
 
-* [Slides]()
+* [Slides](https://drive.google.com/file/d/1cg61kri4YTdnnU2wM5l-cU8zqkzj-5b6/view?usp=sharing)
 
 * [Probability Review I](https://drive.google.com/file/d/13FYgiZKnYJjFtH3T5nNtnp8j1Rufx7_F/view?usp=sharing)
 * [Probability Review II](https://drive.google.com/file/d/1BSAay56rwbsNbOxWKjvn_pQqG6RiJWs-/view?usp=sharing)
@@ -32,8 +32,6 @@ Sept 12
 
 Sept 19
 
-* [Slides]()
-* [Slides with scribbles]()
 
 
 
