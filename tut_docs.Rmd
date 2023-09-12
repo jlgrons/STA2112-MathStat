@@ -22,5 +22,5 @@ library(tidyverse)
 
 Sept 12
 
-* [Problems]()
-* [Solutions]()
+* [Problems](https://drive.google.com/file/d/1e_9RM81e5hbpOA38mPHauCdPyex-30ZK/view?usp=sharing)
+* [Solutions](https://drive.google.com/file/d/1vA2TELEEuQgoHrAdctwLIeWYMeBZwE2c/view?usp=sharing)
