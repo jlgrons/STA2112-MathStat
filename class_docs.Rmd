@@ -19,12 +19,16 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 <br>
 
-## Lecture 1: Probability I 
+## Lecture 1: Introduction
 
 Sept 12
 
 * [Slides]()
 * [Slides with scribbles]()
+
+* [Probability Review I]()
+* [Probability Review II]()
+
 
 
 
