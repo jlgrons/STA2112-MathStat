@@ -24,11 +24,16 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 Sept 12
 
 * [Slides]()
+
+* [Probability Review I](https://drive.google.com/file/d/13FYgiZKnYJjFtH3T5nNtnp8j1Rufx7_F/view?usp=sharing)
+* [Probability Review II](https://drive.google.com/file/d/1BSAay56rwbsNbOxWKjvn_pQqG6RiJWs-/view?usp=sharing)
+
+## Lecture 2: Inequalities
+
+Sept 19
+
+* [Slides]()
 * [Slides with scribbles]()
-
-* [Probability Review I]()
-* [Probability Review II]()
-
 
 
 
