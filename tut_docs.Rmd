@@ -1,5 +1,5 @@
 ---
-title: "Lab Documents"
+title: "Tutorial Documents"
 output: 
   html_document:
    toc: true
@@ -18,7 +18,7 @@ library(tidyverse)
 
 <br>
 
-# Lab 1: Probability I 
+# Tutorial 1: Probability I 
 
 Sept 12
 
