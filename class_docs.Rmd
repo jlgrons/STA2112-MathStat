@@ -36,7 +36,7 @@ Sept 19
 
 * [Slides with scribbles](https://drive.google.com/file/d/1-LMYQFYFjhGPV4utuDojR9lSWAW8SBmR/view?usp=sharing)
 
-## Lecture 3: Convergence
+## Lecture 3: Convergence I 
 
 Sept 26
 
@@ -47,4 +47,10 @@ Sept 26
 
 * [Slides with scribbles](https://drive.google.com/file/d/1YZpWRfx6X6T_VCCMrL-t-4dUGhbWi7xF/view?usp=sharing)
 
+
+## Lecture 4: Convergence II
+
+Oct 3
+
+* [Slides](https://drive.google.com/file/d/1D7FiXOUDxyXFZxjKLzI-5RiA93_UNFKS/view?usp=sharing)
 
