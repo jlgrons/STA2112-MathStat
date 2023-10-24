@@ -44,14 +44,14 @@ Sept 18
 * [Solutions](https://drive.google.com/file/d/1mv2F7bZq2mH8QprN07l2BgB0OKH6Lbb1/view?usp=sharing)
 
 
-# Tutorial 4: Convergence
+# Tutorial 4: Convergence I
 
 * [Problems](https://drive.google.com/file/d/1pFBMT0e2qKan-EhCdBRVP5u0uwMQF6w8/view?usp=sharing)
 * [Slides](https://drive.google.com/file/d/1xz29gHcgw2YNEU8eWFqsUBIGAmnCbmhB/view?usp=sharing)
 * [Solutions](https://drive.google.com/file/d/1e8PU3rD5QGCx64__NGtA5TW-aJO8gwLN/view?usp=sharing)
 
 
-# Tutorial 5: Convergence 2
+# Tutorial 5: Convergence II
 
 * [Problems](https://drive.google.com/file/d/1lMU5AFKJ2q44LPwNOO5MsO1VdeIkNxoo/view?usp=sharing)
 * [Slides](https://drive.google.com/file/d/1CVuTUawzjdmntzhvJ9SK3Je9447W3SUc/view?usp=sharing)
@@ -67,7 +67,5 @@ Sept 18
 # Tutorial 7: Review
 
 * [Problems](https://drive.google.com/file/d/1KlAejA2yr5GnPsHxGQ5cIseOnXI4cCM-/view?usp=sharing)
-
 * [Slides](https://drive.google.com/file/d/1zIBip3EzWnpA4Inr92Yu4MJOLuoerRce/view?usp=sharing)
-
 * [Solutions](https://drive.google.com/file/d/1GJyc7y1UCG4UnUC0l704vNFPAAEiVCa-/view?usp=sharing)
