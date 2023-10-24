@@ -43,8 +43,11 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 Zoom link: https://utoronto.zoom.us/j/4541840375 (Passcode: 234912)
 
-- Professor: You are welcome to talk to the instructor after class or arrange a time to talk.  Special office hours prior to the midterm exam will be arranged.  
+- Professor: You are welcome to talk to the instructor after class or arrange a time to talk.  
 
+Special office hours prior to the midterm exam will be arranged.  
+
+Midterm Zoom link: https://utoronto.zoom.us/j/82105694037 (No Passcode)
 <br>
 
 ******
