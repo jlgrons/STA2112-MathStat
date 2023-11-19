@@ -23,72 +23,48 @@ library(tidyverse)
 Sept 12
 
 * [Problems](https://drive.google.com/file/d/1e_9RM81e5hbpOA38mPHauCdPyex-30ZK/view?usp=sharing)
-
 * [Solutions](https://drive.google.com/file/d/1vA2TELEEuQgoHrAdctwLIeWYMeBZwE2c/view?usp=sharing)
-
 * [Recording](https://drive.google.com/file/d/1O9u52aw6GOmnAmQQzGgdSq66d9SenTDd/view?usp=sharing) 
 
 
 # Tutorial 2: Normal Distribution 
 
-Sept 19
+Sept 18
 
 * [Problems](https://drive.google.com/file/d/1qPYV7aAdA0zyXAq7SOqpCbZQrx-F8a2I/view?usp=sharing)
-
 * [Slides](https://drive.google.com/file/d/1yFy7s1Y6xdYrVegFVjztiQWl-cdDPdFh/view?usp=sharing)
-
 * [Recording](https://drive.google.com/file/d/1fnCUyGwCgCJSexbs7vYEFyfF7AQMEocX/view?usp=sharing)
-
 * [Solution](https://drive.google.com/file/d/1-S8foAm1XkM_Zivpa7G67GV98UHCT0hh/view?usp=sharing)
 
 
 # Tutorial 3: Inequalities
 
-Sept 26
-
 * [Problems](https://drive.google.com/file/d/1CgMK-aigr9YVOuKSdD2owRXiR1tJpNs-/view?usp=drive_link)
-
 * [Slides](https://drive.google.com/file/d/1fspmRn7C0NAU-lpB62A7kG6Bs-g9JOjO/view?usp=drive_link)
-
 * [Solutions](https://drive.google.com/file/d/1mv2F7bZq2mH8QprN07l2BgB0OKH6Lbb1/view?usp=sharing)
 
 
-# Tutorial 4: Convergence I
-
-Oct 3
+# Tutorial 4: Convergence
 
 * [Problems](https://drive.google.com/file/d/1pFBMT0e2qKan-EhCdBRVP5u0uwMQF6w8/view?usp=sharing)
-
 * [Slides](https://drive.google.com/file/d/1xz29gHcgw2YNEU8eWFqsUBIGAmnCbmhB/view?usp=sharing)
-
 * [Solutions](https://drive.google.com/file/d/1e8PU3rD5QGCx64__NGtA5TW-aJO8gwLN/view?usp=sharing)
 
 
-# Tutorial 5: Convergence II
-
-Oct 10
+# Tutorial 5: Convergence 2
 
 * [Problems](https://drive.google.com/file/d/1lMU5AFKJ2q44LPwNOO5MsO1VdeIkNxoo/view?usp=sharing)
-
 * [Slides](https://drive.google.com/file/d/1CVuTUawzjdmntzhvJ9SK3Je9447W3SUc/view?usp=sharing)
-
 * [Solutions](https://drive.google.com/file/d/1QgIyebk3hP-4pjwCUgVQ0FLWILRjNOeD/view?usp=sharing)
-
 
 # Tutorial 6: Inference
 
-Oct 17
-
 * [Problems](https://drive.google.com/file/d/1VR3P3fUuPM-6jFQtOv_Sodxz6qUlqUTF/view?usp=sharing)
-
 * [Slides](https://drive.google.com/file/d/1LmoRCcjXAxIYGUre8rt9sPaqyenlLmYE/view?usp=sharing)
-
 * [Solutions](https://drive.google.com/file/d/1WkoGCJZAPS-eHE8vqXQofzsNRx7Y9gng/view?usp=sharing)
 
 
 # Tutorial 7: Review
-
-Oct 24
 
 * [Problems](https://drive.google.com/file/d/1KlAejA2yr5GnPsHxGQ5cIseOnXI4cCM-/view?usp=sharing)
 
@@ -96,4 +72,6 @@ Oct 24
 
 * [Solutions](https://drive.google.com/file/d/1GJyc7y1UCG4UnUC0l704vNFPAAEiVCa-/view?usp=sharing)
 
+# Tutorial 8: MLE and MOM
 
+* [Problems](https://drive.google.com/file/d/1CskQ_5QjJ9AiVZ9oMsTyE3B2dmt6z6R5/view?usp=sharing)
