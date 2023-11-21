@@ -18,9 +18,8 @@ library(tidyverse)
 
 <br>
 
-# Tutorial 1: Probability I 
+# Tutorial 1: Probability 
 
-Sept 12
 
 * [Problems](https://drive.google.com/file/d/1e_9RM81e5hbpOA38mPHauCdPyex-30ZK/view?usp=sharing)
 * [Solutions](https://drive.google.com/file/d/1vA2TELEEuQgoHrAdctwLIeWYMeBZwE2c/view?usp=sharing)
@@ -28,8 +27,6 @@ Sept 12
 
 
 # Tutorial 2: Normal Distribution 
-
-Sept 18
 
 * [Problems](https://drive.google.com/file/d/1qPYV7aAdA0zyXAq7SOqpCbZQrx-F8a2I/view?usp=sharing)
 * [Slides](https://drive.google.com/file/d/1yFy7s1Y6xdYrVegFVjztiQWl-cdDPdFh/view?usp=sharing)
@@ -44,14 +41,14 @@ Sept 18
 * [Solutions](https://drive.google.com/file/d/1mv2F7bZq2mH8QprN07l2BgB0OKH6Lbb1/view?usp=sharing)
 
 
-# Tutorial 4: Convergence
+# Tutorial 4: Convergence I
 
 * [Problems](https://drive.google.com/file/d/1pFBMT0e2qKan-EhCdBRVP5u0uwMQF6w8/view?usp=sharing)
 * [Slides](https://drive.google.com/file/d/1xz29gHcgw2YNEU8eWFqsUBIGAmnCbmhB/view?usp=sharing)
 * [Solutions](https://drive.google.com/file/d/1e8PU3rD5QGCx64__NGtA5TW-aJO8gwLN/view?usp=sharing)
 
 
-# Tutorial 5: Convergence 2
+# Tutorial 5: Convergence II
 
 * [Problems](https://drive.google.com/file/d/1lMU5AFKJ2q44LPwNOO5MsO1VdeIkNxoo/view?usp=sharing)
 * [Slides](https://drive.google.com/file/d/1CVuTUawzjdmntzhvJ9SK3Je9447W3SUc/view?usp=sharing)
