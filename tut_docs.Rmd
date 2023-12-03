@@ -20,8 +20,6 @@ library(tidyverse)
 
 # Tutorial 1: Probability I 
 
-Sept 12
-
 * [Problems](https://drive.google.com/file/d/1e_9RM81e5hbpOA38mPHauCdPyex-30ZK/view?usp=sharing)
 * [Solutions](https://drive.google.com/file/d/1vA2TELEEuQgoHrAdctwLIeWYMeBZwE2c/view?usp=sharing)
 * [Recording](https://drive.google.com/file/d/1O9u52aw6GOmnAmQQzGgdSq66d9SenTDd/view?usp=sharing) 
@@ -29,7 +27,6 @@ Sept 12
 
 # Tutorial 2: Normal Distribution 
 
-Sept 18
 
 * [Problems](https://drive.google.com/file/d/1qPYV7aAdA0zyXAq7SOqpCbZQrx-F8a2I/view?usp=sharing)
 * [Slides](https://drive.google.com/file/d/1yFy7s1Y6xdYrVegFVjztiQWl-cdDPdFh/view?usp=sharing)
@@ -67,15 +64,11 @@ Sept 18
 # Tutorial 7: Review
 
 * [Problems](https://drive.google.com/file/d/1KlAejA2yr5GnPsHxGQ5cIseOnXI4cCM-/view?usp=sharing)
-
 * [Slides](https://drive.google.com/file/d/1zIBip3EzWnpA4Inr92Yu4MJOLuoerRce/view?usp=sharing)
-
 * [Solutions](https://drive.google.com/file/d/1GJyc7y1UCG4UnUC0l704vNFPAAEiVCa-/view?usp=sharing)
 
 # Tutorial 8: MLE and MOM
 
 * [Problems](https://drive.google.com/file/d/1CskQ_5QjJ9AiVZ9oMsTyE3B2dmt6z6R5/view?usp=sharing)
-
 * [Slides](https://drive.google.com/file/d/178F7_zQd6uCeUKk_4em20w90V6liZhpX/view?usp=sharing)
-
 * [Solutions](https://drive.google.com/file/d/17HsPwLqMxoO0vfJGs0izmnTpisb5f98W/view?usp=sharing)
