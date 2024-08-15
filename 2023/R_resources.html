@@ -11,7 +11,7 @@
 
 
 
-<title>Class Documents</title>
+<title>R Resources</title>
 
 <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,12 +29,11 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -61,6 +60,7 @@ if (window.hljs) {
 
 
 
+<link rel="stylesheet" href="custom.css" type="text/css" />
 
 
 
@@ -225,69 +225,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -295,16 +232,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -317,7 +244,7 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">STA2112</a>
+      <a class="navbar-brand" href="index.html">STA2112 Fall 2022</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -338,12 +265,18 @@ div.tocify {
       <a href="class_docs.html">Classes</a>
     </li>
     <li>
-      <a href="tut_docs.html">Tutorials</a>
+      <a href="tut_docs.html">Laboratories</a>
     </li>
     <li>
       <a href="assign_docs.html">Assignments</a>
     </li>
   </ul>
+</li>
+<li>
+  <a href="announcements.html">Announcements</a>
+</li>
+<li>
+  <a href="resources.html">Resources</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -357,61 +290,150 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Class Documents</h1>
+<h1 class="title toc-ignore">R Resources</h1>
 
 </div>
 
 
-<hr />
+<p>There are lots of free resources available for learning R. This page
+contains some excellent resources, but we certainly can’t list all the
+excellent resources available.</p>
 <p><br></p>
-<div id="lecture-1-introduction" class="section level2">
-<h2>Lecture 1: Introduction</h2>
-<p>Sept 12</p>
-<!-- * [Slides](https://drive.google.com/file/d/1cg61kri4YTdnnU2wM5l-cU8zqkzj-5b6/view?usp=sharing) -->
-<!-- * [Probability Review I](https://drive.google.com/file/d/13FYgiZKnYJjFtH3T5nNtnp8j1Rufx7_F/view?usp=sharing) -->
-<!-- * [Probability Review II](https://drive.google.com/file/d/1BSAay56rwbsNbOxWKjvn_pQqG6RiJWs-/view?usp=sharing) -->
-<!-- ## Lecture 2: Inequalities -->
-<!-- Sept 19 -->
-<!-- * [Slides](https://drive.google.com/file/d/1eTUpSSQ7Ho_Dl8nPIVJPneFT9Aya-4EN/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1-LMYQFYFjhGPV4utuDojR9lSWAW8SBmR/view?usp=sharing) -->
-<!-- ## Lecture 3: Convergence I  -->
-<!-- Sept 26 -->
-<!-- * [Slides](https://drive.google.com/file/d/17bA2gUL3PZBgqmLT_s266ajfLtp6Nan2/view?usp=sharing) -->
-<!-- * [Old Midterm](https://drive.google.com/file/d/12M2saikKa5RbuVR-Kic9nB7qtZ3YLBkH/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1YZpWRfx6X6T_VCCMrL-t-4dUGhbWi7xF/view?usp=sharing) -->
-<!-- ## Lecture 4: Convergence II -->
-<!-- Oct 3 -->
-<!-- * [Slides](https://drive.google.com/file/d/1D7FiXOUDxyXFZxjKLzI-5RiA93_UNFKS/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1Zg30uHwHIFHpjfO1JN8gpQqfL6nTQBWX/view?usp=sharing) -->
-<!-- ## Lecture 5: Inference I -->
-<!-- Oct 10 -->
-<!-- *  [Slides](https://drive.google.com/file/d/1fZNt3s9hhSX75TislCgY9it8EAsKA0G-/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1rvHc2Ex2BPVLgT6kkksYEkGHrDAQikKj/view?usp=sharing) -->
-<!-- ## Lecture 6: Inference II  -->
-<!-- Oct 17 -->
-<!-- * [Slides](https://drive.google.com/file/d/1WSu7Up59hFjrqFamltSL88WiCWR_Sb6C/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1OQqpDc_XBFmrsohJOkR3GaC6Q5LlSK4M/view?usp=sharing) -->
-<!-- * [Practice Midterms](https://drive.google.com/drive/folders/1ywgMNRm0hjVzzTXHyzvzKN4UTLz5Dg4p?usp=share_link) -->
-<!-- ## Lecture 7: Midterm -->
-<!-- Oct 24 -->
-<!-- * [Slides](https://drive.google.com/file/d/1eVSVVvDDhmqn4lkOkvnZ7nkvMv0B45IV/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1xo1EZUjPGJBTSl5hfpn2dUiSRW__liaO/view?usp=sharing) -->
-<!-- ## Lecture 8: Nonparametrics -->
-<!-- Nov 14 -->
-<!-- * [Slides](https://drive.google.com/file/d/1jjVQjH_dPs8GPDXZF7qwfpPgiTyzASuT/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/170y43dSYpOav386yiElvtZZxeBxad6GQ/view?usp=sharing) -->
-<!-- * [Final Project](https://drive.google.com/file/d/1W2739l4nfvJQL0oHOIkztVO7ORoNEElk/view?usp=sharing) -->
-<!-- * [Final Project with scribbles](https://drive.google.com/file/d/18gOHFLhDacdk1yUclAmjoDqignjxO0jS/view?usp=sharing) -->
-<!-- ## Lecture 9: Parametrics -->
-<!-- Nov 21 -->
-<!-- * [Slides](https://drive.google.com/file/d/1syu_BwWTjDcHPhFS3JttaCG2Bfb-AGtp/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1oAy4vnFGSq7rahlB50MLqDNM-luRUYfc/view?usp=sharing) -->
+<hr />
+<div id="running-r" class="section level1">
+<h1>Running R</h1>
+<p><a href= "https://www.r-project.org"><i class="fab fa-r-project fa-1x"></i></a>
+is a software environment for statistical computing and graphics that
+can be freely downloaded at <a
+href="https://cran.r-project.org">CRAN</a>.</p>
+<p><a href="https://www.rstudio.com">RStudio</a> is a popular integrated
+development environment for <i class="fab fa-r-project fa-1x"></i> that
+we will be using throughout the course.</p>
+<p>There are two ways that students can run R using RStudio:</p>
+<ol style="list-style-type: decimal">
+<li><p>Create an account on <a href="https://rstudio.cloud">RStudio
+Cloud</a>.</p></li>
+<li><p>Install RStudio on your computer. A desktop version is available
+to <a
+href="https://www.rstudio.com/products/rstudio/#Desktop">download</a> on
+to your personal computer for free.</p></li>
+</ol>
+<p><br></p>
+<div class="yourturn">
+<p><i class="fas fa-puzzle-piece" aria-hidden="true"></i> <strong> Test
+your setup! </strong><br><br></p>
+<ol style="list-style-type: decimal">
+<li>Create a new project in RStudio (desktop or cloud version), and
+create a new R script file</li>
+<li>Type and run the following code:</li>
+</ol>
+<pre><code>    print(&quot;Hello World!&quot;)
+    n &lt;- c(1,2,3,4)       
+    n</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Install the <code>car</code> package:</li>
+</ol>
+<pre><code>    install.packages(&quot;car&quot;)
+    library(&quot;car&quot;)</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li><p>One of the data sets in the package, called
+<code>Prestige</code>, contains data on the prestige and other
+characteristics of 102 Canadian occupations around 1970. Find out what’s
+in the data set by looking at its help page
+<code>(?Prestige)</code></p></li>
+<li><p>Copy and execute the code <a
+href="https://rstudio-pubs-static.s3.amazonaws.com/291237_ccac14a9e129479c8d07e1dcfac5a697.html">Descriptive
+analysis and visualization in R using Prestige dataset in the car
+package</a> to familiarize yourself with the language and the R Studio
+environment.</p></li>
+</ol>
+</div>
+<p><br></p>
+<hr />
+</div>
+<div id="getting-started-with-r" class="section level1">
+<h1>Getting Started with R</h1>
+<ul>
+<li>If you have never programmed before then <a
+href="https://d1b10bmlvqabco.cloudfront.net/attach/ighbo26t3ua52t/igp9099yy4v10/igz7vp4w5su9/OReilly_HandsOn_Programming_with_R_2014.pdf">Hands-On
+Programming with R, by Garrett Grolemund</a> is a great place to
+start.</li>
+<li><a href="http://r4ds.had.co.nz">R for Data Science, by Hadley
+Wickham and Garrett Grolemund</a> is a wonderful resource.</li>
+<li><a href="https://www.datacamp.com">Datacamp</a> offers a free online
+<a
+href="https://www.datacamp.com/courses/free-introduction-to-r">Introduction
+to R</a>.</li>
+</ul>
+<p><br></p>
+<hr />
+</div>
+<div id="r-style-guide" class="section level1">
+<h1>R Style Guide</h1>
+<blockquote>
+<p>Good coding style is like correct punctuation: you can manage without
+it, butitsuremakesthingseasiertoread. Just as with punctuation, while
+there are many code styles to choose from, some are more reader-friendly
+than others. <em>Hadley Wickham, <a
+href="http://style.tidyverse.org/index.html">Tidyverse Style
+Guide</a>.</em></p>
+</blockquote>
+<p>When you write code, especially when it will be read by other people
+(e.g., your TA), refer to the <a
+href="http://style.tidyverse.org/index.html">Tidyverse Style Guide</a>
+for best practices.</p>
+<p><br></p>
+<hr />
+</div>
+<div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p><a href="http://rmarkdown.rstudio.com">R Markdown</a> documents can
+be used to create documents that weave together code and text.</p>
+<p>An R Markdown Cheat Sheet downloaded from <a
+href="https://www.rstudio.com/resources/cheatsheets/">RStudio</a> is
+available <a href="rmarkdown-2.0.pdf">here</a>.</p>
+<p>A guide to producing R Markdown documents for class assignments is
+available <a href="Rmarkdownforclassreports.html">here</a>. This guide
+also includes a short introduction to <span
+class="math inline">\(\LaTeX\)</span> for including math in R
+Markdown.</p>
+<p><br></p>
+<p class="yourturn">
+<i class="fas fa-puzzle-piece" aria-hidden="true"></i> <strong> Test
+your setup! </strong><br><br> Lorem ipsum dolor sit amet, consetetur
+sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+</p>
+<p><br></p>
+<hr />
+</div>
+<div id="getting-help-with-r" class="section level1">
+<h1>Getting Help with R</h1>
+<p>Students can always ask a member of the teaching staff for help
+during office hours, tutorial, or on the class <a
+href="https://piazza.com/utoronto.ca/winter2018/sta130h1/home">discussion
+forum</a>.</p>
+<p><a href="https://stackoverflow.com">stackoverflow</a> is a popular
+forum for posting and answering questions related to programming.
+Questions tagged R can be found <a
+href="https://stackoverflow.com/questions/tagged/r">here</a> and
+questions tagged RStudio can be found <a
+href="https://stackoverflow.com/questions/tagged/rstudio">here</a>.</p>
+<p><br></p>
+<hr />
+<p>R Markdown source for this page
+<a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/R_resources.Rmd">
+<i class="fa fa-github fa-2x" aria-hidden="true"></i> </a></p>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -444,35 +466,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

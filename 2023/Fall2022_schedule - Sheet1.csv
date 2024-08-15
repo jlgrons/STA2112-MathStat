@@ -1,0 +1,27 @@
+Week,Date,Session,Title,Topics,Recommended Resources,Due Dates
+1,Sept 12,Lecture ,Probability Review, Course Introduction, Knight Chp 1 + 2,
+,,Lab ,Probability Review,,,
+2,Sept 19,Lecture , Inequalities,Concentration inequalities; Expectation Inequalities, Wasserman Chp 4, 
+,,Lab , Normal Distribution Properties,,,
+3,Sept 26,Lecture ,Convergence, Modes of Convergence; Convergence relationships, Knight Chp 3; Wasserman Chp 5, Assignment 1
+,,Lab , Inequalities,,,
+4,Oct 3,Lecture , Limit Theorems, CLT; LLN; Delta method, Knight Chp 3; Wasserman Chp 5, 
+,,Lab 5,Convergence,,,
+5,Oct 10,Lecture , Inference, Statistical Models and Inference; Parametric and nonparmetric models; Goals of inference; Inferential frameworks, Knight Chp 4; Davison Chp 1, Assignment 2
+,,Lab , Limit Theorems,,,
+6,Oct 17, Lecture , Nonparametric Estimation,Statistical functionals; Substitution Principle; Bootstrap,Knight Chp 4; Davison Chps 1 and 2,
+,,Lab ,Inference,,,
+7,Oct 24, Lecture ,Midterm Review, , ,Assignment 3
+,,Lab ,Midterm Review,,,
+8,Oct 31, Lecture ,Midterm Exam,,,
+,,Lab ,No Lab ,,,
+9,Nov 7,Lecture ,READING WEEK,,,
+,,Lab ,READING WEEK,,,
+10,Nov 14, Lecture, Likelihoood I,Likelihood function; Likelihood principle; Asymptotic theory,Knight Chp 5; Davison Chp 4,
+,,Lab, No Lab,,,
+11,Nov 21,Lecture,Likelihoood II, Penalized likelihood, , Assignment 4
+,,Lab, Likelihood,,,
+12,Nov 28,Lecture,Likelihood III,Misspecified Models; Numerical computation of MLEs, , 
+,,Lab,Final Project Working Session,,,
+13,Dec 5,Lecture 13,Presentations, Final Project Presentations,,Assignment 5
+,,Lab 13, No Lab,,,

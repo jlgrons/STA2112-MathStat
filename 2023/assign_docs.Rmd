@@ -1,0 +1,56 @@
+---
+title: "Assignment Documents"
+output: 
+  html_document:
+   toc: true
+   toc_float: true
+   theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
+```
+******
+
+All assignments will be posted to this section approximately 1-2 weeks before the due date listed on the course schedule.  Assignments are to be submitted through Quercus and are graded based on completion.  Even though some assignments may appear short, they take longer than expected to complete. Please do not leave things until the last minute. 
+
+<br>
+
+## Assignment 1 (Probability)
+
+Due Sept 26 at 9 am
+
+[Assignment Document](https://drive.google.com/file/d/1SbTpFmX9wfQfVI_jn2SbOuf1TDMEWXiC/view?usp=sharing)
+
+<!-- [Assignment Solutions]() -->
+
+## Assignment 2 (Probability + Inequalities)
+
+Due Oct 10 at 9am
+
+[Assignment Document](https://drive.google.com/file/d/1lhwYnQ7bWp5CtvXPL9i8pCXvkAWLjQLy/view?usp=sharing)
+
+## Assignment 3 (Convergence + Inference)
+
+Due Oct 24 at 9am
+
+[Assignment Document](https://drive.google.com/file/d/1YgAGIRHs293r72Fleh_2jqo81K3RibJg/view?usp=sharing)
+
+## Assignment 4 (Inference)
+
+Due Nov 28 at 9am
+
+[Assignment Document](https://drive.google.com/file/d/18FArf_P1t01IpH5V2emsTs3BImA-pHbB/view?usp=sharing)
+
+## Assignment 5 (MLE + MOM)
+
+Due Dec 12 at 9am
+
+[Assignment Document](https://drive.google.com/file/d/1yLFuP6WoVqqlRU-GJMSYCtqP3UA-8OhJ/view?usp=sharing)
+
+Note: Question 2 is optional.
+
+
+
+
+The homework solutions are on Quercus under the 'Files' tab.

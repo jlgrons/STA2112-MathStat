@@ -11,9 +11,9 @@
 
 
 
-<title>Class Documents</title>
+<title>STA2112: Mathematical Statistics I</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -29,9 +29,6 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -144,11 +141,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -177,8 +178,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -186,16 +187,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -225,69 +219,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -295,16 +226,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -357,61 +278,51 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Class Documents</h1>
+<h1 class="title toc-ignore">STA2112: Mathematical Statistics I</h1>
+<h3 class="subtitle">Fall 2023, Course Website</h3>
 
 </div>
 
 
+<p><br></p>
+<p>Welcome to the course website for <strong>STA2112</strong>
+(Mathematical Statistics I). This course is offered by the department of
+<a href="http://utstat.toronto.edu">Statistical Sciences</a>, and is the
+first of two canonical mathematical statistics courses designed for
+students in the MSc program in Statistical Sciences.</p>
+<p><strong>Prerequisites</strong></p>
+<p>Undergraduate-level understanding of</p>
+<ul>
+<li>Advanced calculus (eg. MAT237)</li>
+<li>Linear algebra (eg. MAT223, MAT224).</li>
+</ul>
+<p>A previous course in probability and/or statistics is expected.
+Prerequisites will not be waived. Enrollment is restricted to graduate
+students in Statistics, Biostatistics, and Computer Science.</p>
+<p><strong>Overview</strong></p>
+<p>Review of probability theory, convergence of random variables,
+statistical models, statistical functionals, maximum likelihood
+estimation, and computational methods.</p>
+<p>Important information related to STA2112 will be posted on this
+website including:</p>
+<ul>
+<li><p><a href="syllabus.html">Course syllabus</a></p></li>
+<li><p><a href="class_docs.html">Class Documents</a></p></li>
+<li><p><a href="tut_docs.html">Tutorial Documents</a></p></li>
+</ul>
 <hr />
 <p><br></p>
-<div id="lecture-1-introduction" class="section level2">
-<h2>Lecture 1: Introduction</h2>
-<p>Sept 12</p>
-<!-- * [Slides](https://drive.google.com/file/d/1cg61kri4YTdnnU2wM5l-cU8zqkzj-5b6/view?usp=sharing) -->
-<!-- * [Probability Review I](https://drive.google.com/file/d/13FYgiZKnYJjFtH3T5nNtnp8j1Rufx7_F/view?usp=sharing) -->
-<!-- * [Probability Review II](https://drive.google.com/file/d/1BSAay56rwbsNbOxWKjvn_pQqG6RiJWs-/view?usp=sharing) -->
-<!-- ## Lecture 2: Inequalities -->
-<!-- Sept 19 -->
-<!-- * [Slides](https://drive.google.com/file/d/1eTUpSSQ7Ho_Dl8nPIVJPneFT9Aya-4EN/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1-LMYQFYFjhGPV4utuDojR9lSWAW8SBmR/view?usp=sharing) -->
-<!-- ## Lecture 3: Convergence I  -->
-<!-- Sept 26 -->
-<!-- * [Slides](https://drive.google.com/file/d/17bA2gUL3PZBgqmLT_s266ajfLtp6Nan2/view?usp=sharing) -->
-<!-- * [Old Midterm](https://drive.google.com/file/d/12M2saikKa5RbuVR-Kic9nB7qtZ3YLBkH/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1YZpWRfx6X6T_VCCMrL-t-4dUGhbWi7xF/view?usp=sharing) -->
-<!-- ## Lecture 4: Convergence II -->
-<!-- Oct 3 -->
-<!-- * [Slides](https://drive.google.com/file/d/1D7FiXOUDxyXFZxjKLzI-5RiA93_UNFKS/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1Zg30uHwHIFHpjfO1JN8gpQqfL6nTQBWX/view?usp=sharing) -->
-<!-- ## Lecture 5: Inference I -->
-<!-- Oct 10 -->
-<!-- *  [Slides](https://drive.google.com/file/d/1fZNt3s9hhSX75TislCgY9it8EAsKA0G-/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1rvHc2Ex2BPVLgT6kkksYEkGHrDAQikKj/view?usp=sharing) -->
-<!-- ## Lecture 6: Inference II  -->
-<!-- Oct 17 -->
-<!-- * [Slides](https://drive.google.com/file/d/1WSu7Up59hFjrqFamltSL88WiCWR_Sb6C/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1OQqpDc_XBFmrsohJOkR3GaC6Q5LlSK4M/view?usp=sharing) -->
-<!-- * [Practice Midterms](https://drive.google.com/drive/folders/1ywgMNRm0hjVzzTXHyzvzKN4UTLz5Dg4p?usp=share_link) -->
-<!-- ## Lecture 7: Midterm -->
-<!-- Oct 24 -->
-<!-- * [Slides](https://drive.google.com/file/d/1eVSVVvDDhmqn4lkOkvnZ7nkvMv0B45IV/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1xo1EZUjPGJBTSl5hfpn2dUiSRW__liaO/view?usp=sharing) -->
-<!-- ## Lecture 8: Nonparametrics -->
-<!-- Nov 14 -->
-<!-- * [Slides](https://drive.google.com/file/d/1jjVQjH_dPs8GPDXZF7qwfpPgiTyzASuT/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/170y43dSYpOav386yiElvtZZxeBxad6GQ/view?usp=sharing) -->
-<!-- * [Final Project](https://drive.google.com/file/d/1W2739l4nfvJQL0oHOIkztVO7ORoNEElk/view?usp=sharing) -->
-<!-- * [Final Project with scribbles](https://drive.google.com/file/d/18gOHFLhDacdk1yUclAmjoDqignjxO0jS/view?usp=sharing) -->
-<!-- ## Lecture 9: Parametrics -->
-<!-- Nov 21 -->
-<!-- * [Slides](https://drive.google.com/file/d/1syu_BwWTjDcHPhFS3JttaCG2Bfb-AGtp/view?usp=sharing) -->
-<!-- * [Slides with scribbles](https://drive.google.com/file/d/1oAy4vnFGSq7rahlB50MLqDNM-luRUYfc/view?usp=sharing) -->
-</div>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This
+website is licensed under a
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+Commons Attribution-NonCommercial-ShareAlike 4.0 International
+License</a>.</p>
+<p><br></p>
+<p><a href="https://github.com/jlgrons/STA2112-MathStat">R Markdown
+source for this website</a></p>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -444,35 +355,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
