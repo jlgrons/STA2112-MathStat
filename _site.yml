@@ -9,7 +9,7 @@ navbar:
       href: schedule.html
     - text: Course Documents
       menu:
-        - text: Classes
+        - text: Lectures
           href: class_docs.html
         - text: Tutorials
           href: tut_docs.html

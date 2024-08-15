@@ -1,6 +1,6 @@
 ---
 title: "STA2112: Mathematical Statistics I"
-subtitle: "Fall 2023, Course Website"
+subtitle: "Fall 2024, Course Website"
 
 output: 
   html_document:
@@ -33,9 +33,9 @@ Important information related to STA2112 will be posted on this website includin
 
  - [Course syllabus](syllabus.html)
  
- - [Class Documents](class_docs.html) 
+ - [Lecture Notes](class_docs.html) 
  
- - [Tutorial Documents](tut_docs.html)
+ - [Tutorial Problem Sets](tut_docs.html)
  
  ******
 <br>
