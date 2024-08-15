@@ -1,7 +1,7 @@
 ---
 title: "STA2112: Mathematical Statistics I"
 subtitle: "Syllabus"
-date: Fall 2023
+date: Fall 2024
 
 output: 
   html_document:
@@ -21,7 +21,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 ## <i class="fas fa-user-friends" aria-hidden="true"></i> Teaching Team
 - <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Professor: [Jesse Gronsbell](https://sites.google.com/view/jgronsbell/home?authuser=0)
 
-- <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistant: Yeonjoon (Philip) Choi, PhD student in Statistical Sciences
+- <span class="fas fa-user-friends" aria-hidden="true"></span> Teaching Assistant: Junhao Zhu, PhD student in Statistical Sciences
 
 <br>
 
@@ -39,15 +39,9 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 
-- Teaching Assistant: Virtual from 1:30-2:30pm on Wednesdays 
-
-Zoom link: https://utoronto.zoom.us/j/4541840375 (Passcode: 234912)
+- Teaching Assistant: TBD
 
 - Professor: You are welcome to talk to the instructor after class or arrange a time to talk.  
-
-Special office hours prior to the midterm exam will be arranged.  
-
-Midterm Zoom link: https://utoronto.zoom.us/j/82105694037 (No Passcode)
 <br>
 
 ******
@@ -253,7 +247,7 @@ There may be times when you are unable to complete course work on time due to no
 
 ## <i class="fas fa-user-plus" aria-hidden="true"></i> Acknowledgements
 
-The following people have contributed to the design of the course materials and website: Prof. Jesse Gronsbell (2020-2022) and Jianhui Gao (2022).
+The following people have contributed to the design of the course materials and website: Prof. Jesse Gronsbell (2020-2022), Jianhui Gao (2022), and Philip Choi (2023).
 <br>
 
 ****** 

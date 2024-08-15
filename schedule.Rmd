@@ -17,17 +17,17 @@ knitr::opts_chunk$set(warning = F, message = F)
 Below is our course schedule, which will almost certainly change as the course progresses.  Details regarding evaluation due dates can be found below the table.
 
 ```{r, echo=FALSE}
-library(tidyverse)
-library(kableExtra)
-options(knitr.kable.NA = '')
-
-my_backgrounds <- colorRampPalette(c("white", "cadetblue"))(5)
-row_nums <-sort(c(seq(1,26,4), seq(2,26,4)))
-
-jsc270courseschedule <- read_csv("Fall2022_schedule - Sheet1.csv")
-knitr::kable(jsc270courseschedule[1:26,]) %>%  
-  kable_styling(full_width = T, position = "float_left")   %>%   
-  row_spec(row_nums ,background = my_backgrounds[2]) 
+# library(tidyverse)
+# library(kableExtra)
+# options(knitr.kable.NA = '')
+# 
+# my_backgrounds <- colorRampPalette(c("white", "cadetblue"))(5)
+# row_nums <-sort(c(seq(1,26,4), seq(2,26,4)))
+# 
+# jsc270courseschedule <- read_csv("Fall2022_schedule - Sheet1.csv")
+# knitr::kable(jsc270courseschedule[1:26,]) %>%  
+#   kable_styling(full_width = T, position = "float_left")   %>%   
+#   row_spec(row_nums ,background = my_backgrounds[2]) 
 ```
 
 <br>
