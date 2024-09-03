@@ -29,7 +29,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-comment" aria-hidden="true"></i> Course Communication
 
-- <span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the [Discussion board](https://q.utoronto.ca/courses/316929/) integrated within Quercus, which students can access by logging in with their UTORID.  One of the instructors will try to answer promptly.  Please see the Course Policies section for more detail. 
+- <span class="fas fa-question" aria-hidden="true"></span> Questions about this course should be directed to the discussion board integrated within Quercus, which students can access by logging in with their UTORID.  One of the instructors will try to answer promptly.  Please see the Course Policies section for more detail. 
 
 - <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> If you don't think your question is appropriate for the class discussion board (e.g.\ it is not related to course content or logistics), please reach out to both the professor and the TA using the direct message functionality on Quercus.  Allow up to 48 business hours for a reply. Regular emails will not be answered. 
 
@@ -111,7 +111,7 @@ You are allowed one late day to use on a homework assignment at any time through
 
 - Class slides, notes, and other important information can be found on the [course website.](https://sta2112.github.io/)
 
-- Questions and Answers can be posted on the [Quercus discussion board](https://q.utoronto.ca/courses/316929/).
+- Questions and Answers can be posted on the Quercus discussion board.
 
 
 <br>
