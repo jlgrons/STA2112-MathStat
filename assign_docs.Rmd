@@ -15,9 +15,9 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 All assignments will be posted to this section approximately 1-2 weeks before the due date listed on the course schedule.  Assignments are to be submitted through Quercus and are graded based on completion.  Even though some assignments may appear short, they take longer than expected to complete. Please do not leave things until the last minute.  The homework solutions will be posted on Quercus under the 'Files' tab.
 
 
-<!-- ## Assignment 1 (Probability) -->
+## Assignment 1 (Probability)
 
-<!-- Due Sept 17 at 9 am -->
+Due Sept 17 at 9 am
 
-<!-- [Assignment Document](https://drive.google.com/file/d/1XiNdzEQj4L4BDVLisfCR0taQOMkQdRva/view?usp=sharing) -->
+[Assignment Document](https://drive.google.com/file/d/1XiNdzEQj4L4BDVLisfCR0taQOMkQdRva/view?usp=sharing)
 
