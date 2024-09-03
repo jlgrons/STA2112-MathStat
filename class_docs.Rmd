@@ -23,5 +23,8 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 Sept 3
 
+* [Slides](https://drive.google.com/file/d/1DXhmaWxhydCKmgiEIwUvBnUmC51fetJ9/view?usp=sharing)
+
 * [Probability Review I](https://drive.google.com/file/d/1CcavZMf0Lzu6TTaga6k8dzdBIfWQJ96B/view?usp=sharing)
 * [Probability Review II](https://drive.google.com/file/d/1hA2L4Fg4C5lzUYjXoyFLcli4GjJ59xXa/view?usp=sharing)
+
