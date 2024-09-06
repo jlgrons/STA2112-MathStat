@@ -21,7 +21,7 @@ library(tidyverse)
 * [Solution](https://drive.google.com/file/d/1kRQErAxbK__yyg3AZDXZtXK5G6LlgSbf/view?usp=sharing)
 
 
-<!-- # Tutorial 2: Normal Distribution -->
+# Tutorial 2: Normal Distribution
 
-<!-- * [Problems]() -->
+* [Problems](https://drive.google.com/file/d/113-KBs8AEoFSmmrhuqKPM5S4vDS-4z7r/view?usp=sharing)
 <!-- * [Solution]()  -->
