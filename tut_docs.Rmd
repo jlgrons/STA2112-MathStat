@@ -19,9 +19,10 @@ library(tidyverse)
 
 * [Problems](https://drive.google.com/file/d/1YZPkFNnFJKssjYE0AUE3kxKRRbLzdyTz/view?usp=sharing)
 * [Solution](https://drive.google.com/file/d/1kRQErAxbK__yyg3AZDXZtXK5G6LlgSbf/view?usp=sharing)
+* [Extra](https://drive.google.com/file/d/1bdvHrT0-SZ_5sAAhnP66z6juPSlwlZMx/view?usp=sharing)
 
 
 # Tutorial 2: Normal Distribution
 
 * [Problems](https://drive.google.com/file/d/113-KBs8AEoFSmmrhuqKPM5S4vDS-4z7r/view?usp=sharing)
-<!-- * [Solution]()  -->
+<!-- * [Solution]()  -->s
