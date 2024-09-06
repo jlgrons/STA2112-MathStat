@@ -39,7 +39,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 ## <i class="glyphicon glyphicon-time" aria-hidden="true"></i> Office Hours
 
-- Teaching Assistant: Fridays 10-11 on Zoom (Meeting ID: 465 017 9228, Passcode: 2024)
+- Teaching Assistant (hybrid): Fridays 10-11, Sidney Smith 621 and Zoom: (Meeting ID: 465 017 9228, Passcode: 2024) 
 
 - Professor: You are welcome to talk to the instructor after class or arrange a time to talk.  
 <br>
