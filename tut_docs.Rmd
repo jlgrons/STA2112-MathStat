@@ -27,3 +27,9 @@ library(tidyverse)
 * [Problems](https://drive.google.com/file/d/113-KBs8AEoFSmmrhuqKPM5S4vDS-4z7r/view?usp=sharing)
 * [Solution](https://drive.google.com/file/d/1QBKihanEV7wJsBzbCEYHcnKAYsIxp_HK/view?usp=sharing) 
 * [Extra (can open using Google colab or download)](https://drive.google.com/file/d/1RjM8KyxbMqMw-2bOBHalJZHCuO4LSo9e/view?usp=sharing)
+
+
+# Tutorial 3: Inequalities
+
+* [Problems](https://drive.google.com/file/d/11rpSbwMyuqK_J0HfmC4g_3Un42prTBR7/view?usp=sharing)
+
