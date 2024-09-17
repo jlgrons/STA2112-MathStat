@@ -32,4 +32,5 @@ library(tidyverse)
 # Tutorial 3: Inequalities
 
 * [Problems](https://drive.google.com/file/d/11rpSbwMyuqK_J0HfmC4g_3Un42prTBR7/view?usp=sharing)
+* [Solution](https://drive.google.com/file/d/1JfWKVsLJ91oUcDUgewc9Js0OTZekuXGb/view?usp=sharing)
 
