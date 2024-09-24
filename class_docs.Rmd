@@ -42,3 +42,8 @@ Sept 17
 * [Slides](https://drive.google.com/file/d/123SCNUwTaEr9yZXVxjEu0faCt9o4wp7o/view?usp=sharing)
 * [Slides with scribbles](https://drive.google.com/file/d/1JOpNBijVZ0EmCHUmuzFoHQaNNcEz1NAH/view?usp=sharing)
 
+## Lecture 4: Convergence II
+
+* [Slides](https://drive.google.com/file/d/1wSChRCZYnjp10Yucs04C-lP2hDlKoZdJ/view?usp=sharing)
+<!-- * [Slides with scribbles]() -->
+
