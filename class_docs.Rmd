@@ -45,5 +45,5 @@ Sept 17
 ## Lecture 4: Convergence II
 
 * [Slides](https://drive.google.com/file/d/1wSChRCZYnjp10Yucs04C-lP2hDlKoZdJ/view?usp=sharing)
-<!-- * [Slides with scribbles]() -->
+* [Slides with scribbles](https://drive.google.com/file/d/1E2bI9CDh0YH1IsOuIBAUHjz4D7XnOQHv/view?usp=sharing)
 
