@@ -47,3 +47,10 @@ Sept 17
 * [Slides](https://drive.google.com/file/d/1wSChRCZYnjp10Yucs04C-lP2hDlKoZdJ/view?usp=sharing)
 * [Slides with scribbles](https://drive.google.com/file/d/1E2bI9CDh0YH1IsOuIBAUHjz4D7XnOQHv/view?usp=sharing)
 
+## Lecture 5: Limit Theorems
+
+* [Slides](https://drive.google.com/file/d/1hDQIaF_nxdv6ImRsAm_iQHzDf6gKzaKg/view?usp=sharing)
+<!-- * [Slides with scribbles]() -->
+
+
+
