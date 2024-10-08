@@ -55,6 +55,7 @@ Sept 17
 
 ## Lecture 6: Inference
 
+* [Slides](STA2112_Lecture6_Inference_2024.pdf)
 * [Practice Midterms](https://drive.google.com/drive/folders/1ywgMNRm0hjVzzTXHyzvzKN4UTLz5Dg4p?usp=share_link)
 
 
