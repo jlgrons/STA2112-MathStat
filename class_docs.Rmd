@@ -21,8 +21,6 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 ## Lecture 1: Introduction
 
-Sept 3
-
 * [Slides](https://drive.google.com/file/d/1DXhmaWxhydCKmgiEIwUvBnUmC51fetJ9/view?usp=sharing)
 
 * [Probability Review I](https://drive.google.com/file/d/1CcavZMf0Lzu6TTaga6k8dzdBIfWQJ96B/view?usp=sharing)
@@ -30,33 +28,38 @@ Sept 3
 
 ## Lecture 2: Inequalities
 
-Sept 10 
-
 * [Slides](https://drive.google.com/file/d/1uleYpoJT68laoOWOrx3gMtt9842JMgvB/view?usp=sharing)
+
 * [Slides with scribbles](https://drive.google.com/file/d/1y55dTsWYrHEl2sHbKRsmHuvuMu43QoU0/view?usp=sharing)
 
 ## Lecture 3: Convergence I
 
-Sept 17 
-
 * [Slides](https://drive.google.com/file/d/123SCNUwTaEr9yZXVxjEu0faCt9o4wp7o/view?usp=sharing)
+
 * [Slides with scribbles](https://drive.google.com/file/d/1JOpNBijVZ0EmCHUmuzFoHQaNNcEz1NAH/view?usp=sharing)
 
 ## Lecture 4: Convergence II
 
 * [Slides](https://drive.google.com/file/d/1wSChRCZYnjp10Yucs04C-lP2hDlKoZdJ/view?usp=sharing)
+
 * [Slides with scribbles](https://drive.google.com/file/d/1E2bI9CDh0YH1IsOuIBAUHjz4D7XnOQHv/view?usp=sharing)
 
 ## Lecture 5: Limit Theorems
 
 * [Slides](https://drive.google.com/file/d/1hDQIaF_nxdv6ImRsAm_iQHzDf6gKzaKg/view?usp=sharing)
+
 * [Slides with scribbles](https://drive.google.com/file/d/1STxZlUEpxfh4zXpPbtEgd5tMMg6KrUk5/view?usp=sharing) 
 
 
 ## Lecture 6: Inference
 
 * [Slides](STA2112_Lecture6_Inference_2024.pdf)
-* [Practice Midterms](https://drive.google.com/drive/folders/1ywgMNRm0hjVzzTXHyzvzKN4UTLz5Dg4p?usp=share_link)
+
+* [Practice midterms](https://drive.google.com/drive/folders/1ywgMNRm0hjVzzTXHyzvzKN4UTLz5Dg4p?usp=share_link)
+
 * [Slides with scribbles](https://drive.google.com/file/d/18igSSldzFsHNyzjvrN2yOY5lH0cLkp08/view?usp=sharing)
 
+## Lecture 7: Review
+
+* [Slides](https://drive.google.com/file/d/1P4MO7-UTRKYp0QHolKJjG6g8TaVoM1jO/view?usp=sharing)
 

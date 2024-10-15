@@ -13,7 +13,7 @@
 
 <title>Lecture Notes</title>
 
-<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -29,7 +29,7 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
@@ -144,15 +144,11 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -181,8 +177,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -190,9 +186,16 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -363,7 +366,6 @@ div.tocify {
 <p><br></p>
 <div id="lecture-1-introduction" class="section level2">
 <h2>Lecture 1: Introduction</h2>
-<p>Sept 3</p>
 <ul>
 <li><p><a
 href="https://drive.google.com/file/d/1DXhmaWxhydCKmgiEIwUvBnUmC51fetJ9/view?usp=sharing">Slides</a></p></li>
@@ -377,56 +379,61 @@ Review II</a></p></li>
 </div>
 <div id="lecture-2-inequalities" class="section level2">
 <h2>Lecture 2: Inequalities</h2>
-<p>Sept 10</p>
 <ul>
-<li><a
-href="https://drive.google.com/file/d/1uleYpoJT68laoOWOrx3gMtt9842JMgvB/view?usp=sharing">Slides</a></li>
-<li><a
+<li><p><a
+href="https://drive.google.com/file/d/1uleYpoJT68laoOWOrx3gMtt9842JMgvB/view?usp=sharing">Slides</a></p></li>
+<li><p><a
 href="https://drive.google.com/file/d/1y55dTsWYrHEl2sHbKRsmHuvuMu43QoU0/view?usp=sharing">Slides
-with scribbles</a></li>
+with scribbles</a></p></li>
 </ul>
 </div>
 <div id="lecture-3-convergence-i" class="section level2">
 <h2>Lecture 3: Convergence I</h2>
-<p>Sept 17</p>
 <ul>
-<li><a
-href="https://drive.google.com/file/d/123SCNUwTaEr9yZXVxjEu0faCt9o4wp7o/view?usp=sharing">Slides</a></li>
-<li><a
+<li><p><a
+href="https://drive.google.com/file/d/123SCNUwTaEr9yZXVxjEu0faCt9o4wp7o/view?usp=sharing">Slides</a></p></li>
+<li><p><a
 href="https://drive.google.com/file/d/1JOpNBijVZ0EmCHUmuzFoHQaNNcEz1NAH/view?usp=sharing">Slides
-with scribbles</a></li>
+with scribbles</a></p></li>
 </ul>
 </div>
 <div id="lecture-4-convergence-ii" class="section level2">
 <h2>Lecture 4: Convergence II</h2>
 <ul>
-<li><a
-href="https://drive.google.com/file/d/1wSChRCZYnjp10Yucs04C-lP2hDlKoZdJ/view?usp=sharing">Slides</a></li>
-<li><a
+<li><p><a
+href="https://drive.google.com/file/d/1wSChRCZYnjp10Yucs04C-lP2hDlKoZdJ/view?usp=sharing">Slides</a></p></li>
+<li><p><a
 href="https://drive.google.com/file/d/1E2bI9CDh0YH1IsOuIBAUHjz4D7XnOQHv/view?usp=sharing">Slides
-with scribbles</a></li>
+with scribbles</a></p></li>
 </ul>
 </div>
 <div id="lecture-5-limit-theorems" class="section level2">
 <h2>Lecture 5: Limit Theorems</h2>
 <ul>
-<li><a
-href="https://drive.google.com/file/d/1hDQIaF_nxdv6ImRsAm_iQHzDf6gKzaKg/view?usp=sharing">Slides</a></li>
-<li><a
+<li><p><a
+href="https://drive.google.com/file/d/1hDQIaF_nxdv6ImRsAm_iQHzDf6gKzaKg/view?usp=sharing">Slides</a></p></li>
+<li><p><a
 href="https://drive.google.com/file/d/1STxZlUEpxfh4zXpPbtEgd5tMMg6KrUk5/view?usp=sharing">Slides
-with scribbles</a></li>
+with scribbles</a></p></li>
 </ul>
 </div>
 <div id="lecture-6-inference" class="section level2">
 <h2>Lecture 6: Inference</h2>
 <ul>
-<li><a href="STA2112_Lecture6_Inference_2024.pdf">Slides</a></li>
-<li><a
+<li><p><a href="STA2112_Lecture6_Inference_2024.pdf">Slides</a></p></li>
+<li><p><a
 href="https://drive.google.com/drive/folders/1ywgMNRm0hjVzzTXHyzvzKN4UTLz5Dg4p?usp=share_link">Practice
-Midterms</a></li>
-<li><a
+midterms</a></p></li>
+<li><p><a
 href="https://drive.google.com/file/d/18igSSldzFsHNyzjvrN2yOY5lH0cLkp08/view?usp=sharing">Slides
-with scribbles</a></li>
+with scribbles</a></p></li>
+</ul>
+</div>
+<div id="lecture-7-review" class="section level2">
+<h2>Lecture 7: Review</h2>
+<ul>
+<li><a
+href="https://drive.google.com/file/d/1P4MO7-UTRKYp0QHolKJjG6g8TaVoM1jO/view?usp=sharing">Slides</a></li>
 </ul>
 </div>
 
