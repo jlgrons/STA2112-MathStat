@@ -62,4 +62,5 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 ## Lecture 7: Review
 
 * [Slides](https://drive.google.com/file/d/1P4MO7-UTRKYp0QHolKJjG6g8TaVoM1jO/view?usp=sharing)
-
+* [Slides with scribbles](https://drive.google.com/file/d/1pDwHDEoQfbNpD5OJb5MSOn6bw5LeZphB/view?usp=sharing)
+* [Practice problems solutions](https://drive.google.com/file/d/1ZnWW0smCG_FLajO57o7VPbXVnn7HBpbY/view?usp=sharing)
