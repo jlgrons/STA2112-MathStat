@@ -51,3 +51,4 @@ library(tidyverse)
 
 # Tutorial 7: Midterm Review
 * [Problems](https://drive.google.com/file/d/1-f3yzdnSknMJZ_DU6s-Ge8JtR-D2RRhp/view?usp=sharing)
+* [Solution](https://drive.google.com/file/d/1MhFa6uDeQuV6K5vhwZIEArvhPKRrGbrU/view?usp=sharing)
