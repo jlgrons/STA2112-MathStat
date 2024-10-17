@@ -41,7 +41,7 @@ knitr::opts_chunk$set(warning = F, message = F)
 
 - Teaching Assistant (hybrid): Fridays 10-11, Sidney Smith 621 and Zoom: (Meeting ID: 465 017 9228, Passcode: 2024) 
 
-- Professor: You are welcome to talk to the instructor after class or arrange a time to talk.  
+- Professor: You are welcome to talk to the instructor after class or arrange a time to talk. (Midterm: https://utoronto.zoom.us/j/85964609285)  
 <br>
 
 ******
