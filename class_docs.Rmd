@@ -68,7 +68,7 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 ## Lecture 8: Nonparametrics
 
 * [Slides](https://drive.google.com/file/d/1C1txT_EBAjdq9rwX-6N-GOB2vo4DS_za/view?usp=sharing)
-* [Final Project]()
+* [Final Project](https://drive.google.com/file/d/1i8XChf0KLUPSS7IvGOKLSCv9mLbG0xGO/view?usp=sharing)
 
 
 
