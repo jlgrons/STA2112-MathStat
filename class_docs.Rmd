@@ -62,14 +62,20 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 ## Lecture 7: Review
 
 * [Slides](https://drive.google.com/file/d/1P4MO7-UTRKYp0QHolKJjG6g8TaVoM1jO/view?usp=sharing)
+
 * [Slides with scribbles](https://drive.google.com/file/d/1pDwHDEoQfbNpD5OJb5MSOn6bw5LeZphB/view?usp=sharing)
+
 * [Practice problems solutions](https://drive.google.com/file/d/1ZnWW0smCG_FLajO57o7VPbXVnn7HBpbY/view?usp=sharing)
 
 ## Lecture 8: Nonparametrics
 
 * [Slides](https://drive.google.com/file/d/1C1txT_EBAjdq9rwX-6N-GOB2vo4DS_za/view?usp=sharing)
+
+* [Slides with scribbles](https://drive.google.com/file/d/1U_mR2KELhQy4Ch7QRO4yf-tXqraPz_yb/view?usp=sharing)
+
 * [Final Project](https://drive.google.com/file/d/1i8XChf0KLUPSS7IvGOKLSCv9mLbG0xGO/view?usp=sharing)
 
+* [Final Project with scribbles](https://drive.google.com/file/d/1zxCdNsPhX7yS6DQWzZrmJMQxdU88B1AB/view?usp=sharing)
 
 
 
