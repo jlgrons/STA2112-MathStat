@@ -82,3 +82,6 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 * [Slides](https://drive.google.com/file/d/1b1UfRKBuA1NHHfvy93BqnCo1ezRzY8Pb/view?usp=sharing)
 
+* [Slides with scribbles](https://drive.google.com/file/d/1mFBx7YhH76CWYVUlzr75_qT9DGtF8kE9/view?usp=sharing)
+
+
