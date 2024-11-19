@@ -59,3 +59,4 @@ library(tidyverse)
 
 # Tutorial 9: Likelihood_II
 * [Problems](https://drive.google.com/file/d/1tePKAkHMEDRPGrwxHt1HmHIAd_J23t4k/view?usp=sharing)
+* [Solutions](https://drive.google.com/file/d/1sE-nmaq50DIPagotN1yt7KW0JwIR-WPi/view?usp=sharing)
