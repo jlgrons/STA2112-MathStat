@@ -89,7 +89,7 @@ knitr::opts_chunk$set(echo = TRUE,warning = F, message = F)
 
 * [Slides](https://drive.google.com/file/d/1DtU34x9yXoCzndl_vBi6fsRsE9O64JPX/view?usp=sharing)
 
-* [Slides with scribbles](https://drive.google.com/file/d/1mFBx7YhH76CWYVUlzr75_qT9DGtF8kE9/view?usp=sharing)
+* [Slides with scribbles](https://drive.google.com/file/d/1gO7j7p-ziJZx3zz4zbPc43lht0VbhcuQ/view?usp=sharing)
 
 
 
